@@ -1,0 +1,17 @@
+{
+  "date": null,
+  "risk_level": "UNKNOWN",
+  "risk_score": null,
+  "watch": "",
+  "headline": "아직 AI 투자리스크 보고서가 생성되지 않았습니다.",
+  "summary": "GitHub Actions 최초 실행 후 최신 데이터로 자동 갱신됩니다.",
+  "metrics": [],
+  "alerts": [],
+  "contagion": "",
+  "investor_view": "",
+  "orange_triggers": [],
+  "red_triggers": [],
+  "one_liner": "",
+  "sources": [],
+  "html_url": "./latest.html"
+}
