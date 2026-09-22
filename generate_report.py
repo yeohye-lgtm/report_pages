@@ -25,7 +25,7 @@ def generate():
     if not key: raise RuntimeError('OPENAI_API_KEY 환경변수가 없습니다.')
     prompt=PROMPT_FILE.read_text(encoding='utf-8')
     response=OpenAI(api_key=key).responses.create(model='gpt-5.6',reasoning={'effort':'medium'},tools=[{'type':'web_search'}],input=prompt+' 오늘 날짜는 '+TODAY.isoformat()+'이다. 최신 공개자료를 검색하고 JSON object 하나만 반환한다.')
-    data=json.loads(response.output_text.strip()); validate(data); return data
+    data=json.loads(response.output_text.strip()); data['date']=TODAY.isoformat(); validate(data); return data
 def color(x):
     x=str(x or '').upper()
     if 'RED' in x:return 'red'
