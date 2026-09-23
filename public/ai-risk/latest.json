@@ -3,104 +3,109 @@
   "risk_level": "YELLOW+",
   "risk_score": 2.88,
   "watch": "ORANGE WATCH",
-  "headline": "AI 수요는 여전히 강하지만 Oracle 연계 프로젝트 대출 할인과 대형 보증 확대가 금융화 리스크를 높이고 있다.",
-  "summary": "요청한 2026년 9월 23일은 아직 도래하지 않아, 2026년 9월 22일 현재 확인 가능한 최신 공개자료를 기준으로 평가했다. Hyperscaler의 동시 CapEx 축소나 GPU 가격의 광범위한 붕괴는 확인되지 않아 AI 인프라 실수요가 본격 둔화됐다고 판단하기 어렵다. 반면 Project Jupiter 대출이 액면가의 89~91센트에 제시되고 은행의 미매각 물량이 늘어난 것은 자본의 가격과 인수 조건이 선택적으로 악화되고 있다는 명확한 경고다. Neocloud의 신규 조달 창구는 열려 있으므로 신용수축보다는 금융화가 심화된 YELLOW+ 단계로 판단한다.",
+  "headline": "AI 컴퓨트 수요는 여전히 강하지만 Project Jupiter 대출 할인과 대규모 조건부 보증이 금융화 위험을 높이고 있다.",
+  "summary": "GPU 임대가격과 주요 hyperscaler의 투자계획에서는 광범위한 AI 수요 둔화가 확인되지 않았다. 반면 Oracle 임차 프로젝트 대출의 89~91센트 호가, AI 채권에 대한 투자자의 추가 프리미엄 요구, 5% 안팎의 장기금리는 프로젝트 금융의 자본비용과 실행위험이 악화되고 있음을 보여준다. CoreWeave·Lambda·Nscale의 조달 창구는 열려 있어 신용수축 단계는 아니지만, NVIDIA의 대규모 조건부 보증과 고객집중도가 높은 neocloud 구조를 고려하면 정상적 투자확대에서 금융화가 심화되는 YELLOW+ 구간이다.",
   "metrics": [
     {
       "label": "미국 10Y",
       "value": "4.96%",
       "status": "YELLOW",
-      "note": "U.S. Treasury의 최신 공식 종가는 9월 21일 기준. 9월 18일 대비 -5bp, 9월 14일 대비 -1bp이나 절대금리가 높아 프로젝트 할인율과 차환비용 부담이 지속된다."
+      "note": "9월 22일 U.S. Treasury 종가. 전일 대비 0bp, 1주 전인 9월 15일 대비 -4bp이나 프로젝트 할인율 기준으로는 여전히 높은 수준."
     },
     {
       "label": "미국 30Y",
       "value": "5.29%",
       "status": "YELLOW",
-      "note": "9월 21일 공식 종가로 전 거래일 대비 -5bp, 1주 전 대비 -5bp. 주간 방향은 소폭 하락했지만 장기 데이터센터 자산의 자본비용에는 여전히 부담스러운 수준이다."
+      "note": "9월 22일 종가. 전일 대비 0bp, 9월 15일 대비 -7bp. 장기 데이터센터 임대·프로젝트 부채의 차환비용과 잔존가치 민감도를 높이는 수준."
     },
     {
-      "label": "Project Jupiter 대출가격",
-      "value": "액면가의 89~91센트",
+      "label": "Oracle Project Jupiter 대출",
+      "value": "액면 1달러당 89~91센트",
       "status": "ORANGE",
-      "note": "Oracle 임차 데이터센터 관련 약 180억달러 대출의 신디케이션이 지연되고 일부 은행이 예상보다 많은 물량을 보유하는 것으로 보도됐다. 단일 프로젝트 신호이므로 전체 시장 폐쇄로 확대 해석하지 않는다."
+      "note": "약 180억달러 규모의 Oracle 임차 데이터센터 관련 대출이 할인 호가됐고 광범위한 신디케이션이 지연된 것으로 보도됐다. 개별 프로젝트 신용경고이지만 Oracle의 직접 지급불능이나 생태계 전반의 대출가격 붕괴는 아직 확인되지 않았다."
     },
     {
-      "label": "GPU cloud rental",
-      "value": "H100 $3.37, H200 $4.29, B200 $6.69, B300 $7.64/GPU-시간",
-      "status": "STABLE",
-      "note": "9월 21일 CCIR neocloud 보장형 패널 기준. H100 최저가 지표는 전월 대비 약 3% 하락하고 최근 7일 보합으로, 여러 시장에서 15~20% 이상 동반 급락했다는 증거는 없다."
+      "label": "GPU 임대가격",
+      "value": "H100 $2.85/hr · H200 $4.94/hr · B200 $7.77/hr",
+      "status": "STRONG",
+      "note": "9월 22일 거래기반 지수. 7일 변화는 각각 +12.7%, +5.6%, +7.8%로 광범위한 가격 붕괴와 반대 방향이다. 다른 시장지표에서도 H100 가격은 대체로 안정적이며 중고·담보가치의 동반 15~20% 급락은 확인되지 않았다."
     },
     {
       "label": "NVIDIA·Oracle·Meta CDS",
       "value": "확인 제한",
       "status": "확인 제한",
-      "note": "신뢰 가능한 최신 무료 공개 종가를 확인하지 못해 과거 수치를 현재값처럼 사용하거나 추정하지 않음."
+      "note": "신뢰 가능한 최신 무료 공개 종가를 확인하지 못해 추정하지 않음. 7월 등 과거 수치를 9월 23일 현재값으로 사용하지 않았다."
     },
     {
-      "label": "AI 대형기업 단기 회사채 스프레드",
-      "value": "중앙값 약 +40bp",
-      "status": "YELLOW",
-      "note": "Amazon·Alphabet·Meta·Oracle의 2~4년물 기준 Reuters/LSEG가 집계한 2026년 중 수치로, 2025년 약 +30bp보다 확대됐다. 오늘의 실시간 종가는 아니지만 발행물량 증가에 따른 투자자 선별 강화가 확인된다."
+      "label": "Hyperscaler CapEx",
+      "value": "동시 하향 0/4",
+      "status": "STRONG",
+      "note": "Microsoft·Alphabet·Meta·Amazon의 최신 공개자료는 AI 및 데이터센터 투자를 유지하거나 확대하는 방향이다. 주요 사업자 2곳 이상의 동시 CapEx 하향 신호는 없다."
     },
     {
       "label": "Neocloud 자금조달",
-      "value": "CoreWeave 2033년 전환사채 $3.7B, 쿠폰 2.875%",
+      "value": "시장 개방, 차주별 양극화",
       "status": "YELLOW",
-      "note": "당초 $3.0B에서 증액돼 시장 접근성은 유지됐다. 방어적 차환 실패보다는 성장자금 조달 성격이 강하지만, 높은 CapEx와 기존 레버리지에 추가되는 무담보 모회사 부채라는 점은 모니터링 대상이다."
+      "note": "CoreWeave는 전환사채를 37억달러로 증액했고 Lambda는 투자등급 고객 계약에 연계된 9.26억달러 SPV 대출을 SOFR+300bp, 99.5에 조달했다. 이는 방어적 차환 실패보다 성장 금융에 가깝지만 CoreWeave와 Nscale의 외부자본 의존 및 고객집중은 지속 점검 대상이다."
     },
     {
       "label": "보증·조건부 노출",
-      "value": "NVIDIA 최대 $105B·Broadcom 최대 약 $29B·Meta RVG 약 $28B",
-      "status": "YELLOW",
-      "note": "모두 최대 계약상 또는 조건부 노출로 현재 발생한 실제 부채와 동일하지 않다. NVIDIA 보증은 단계별 임대 개시 후 증가하며 첫 단계는 FY2029 예상, Broadcom은 지급액이 없고 공정가치도 중요하지 않다고 공시했으며 Meta도 RVG 지급 가능성이 높지 않아 관련 부채를 인식하지 않았다."
+      "value": "NVIDIA 기존 최대 35억달러 + SB Energy 보증 한도 1,050억달러",
+      "status": "ORANGE",
+      "note": "1,050억달러는 OpenAI 관련 4.25GW 캠퍼스의 최대 계약상 한도로, 각 단계의 임대 개시와 특정 채무불이행을 전제로 순차 발효된다. 현재 실제 인식 부채나 현금지급액이 아니며 NVIDIA는 보증의 공정가치가 중요하지 않다고 공시했다."
     }
   ],
   "alerts": [
     {
-      "title": "Oracle 연계 Project Jupiter 대출이 89~91센트로 할인",
+      "title": "AI 채권 공급 증가로 투자자 선별 강화",
+      "status": "YELLOW",
+      "detail": "Reuters는 AI 관련 우량채가 동급 전통 산업채보다 넓은 스프레드와 신규발행 프리미엄을 요구받고 있으며 일부 투자자가 포트폴리오 집중한도를 재검토하고 있다고 보도했다. 시장 폐쇄가 아니라 자본가격 정상화·악화 신호다."
+    },
+    {
+      "title": "Project Jupiter 대출이 stressed-price 영역으로 하락",
       "status": "ORANGE",
-      "detail": "전력·가스 공급과 환경·지역사회 반대, Oracle 신용도 약화가 결합되면서 신디케이션이 지연됐다. 프로젝트 지연이 이자비용 증가와 추가 자본 요구로 연결되는지 확인이 필요하다."
+      "detail": "Oracle 임차 데이터센터 관련 약 180억달러 대출이 89~91센트에 호가됐다. 인허가·지역 반발과 Oracle 신용부담이 신디케이션 및 은행 보유위험으로 연결되는 첫 구체적 프로젝트 금융 경고다."
     },
     {
-      "title": "CoreWeave, 전환사채를 $3.7B로 증액 발행",
-      "status": "YELLOW",
-      "detail": "조달시장 폐쇄나 refinancing 실패가 아니라 투자자 수요가 존재한다는 신호다. 다만 모회사 수준의 부채·잠재 희석과 2026년 상반기 대규모 CapEx가 동시에 증가하고 있다."
+      "title": "NVIDIA가 AI 인프라 보증자로 본격 편입",
+      "status": "ORANGE",
+      "detail": "NVIDIA는 OpenAI 임차 Ohio 캠퍼스와 관련해 단계적으로 발효되는 최대 1,050억달러 보증을 공시했다. 현재 손실이나 지급은 없지만 GPU 공급자를 넘어 토지·전력·데이터센터 셸 금융의 신용지원자로 노출이 확대됐다."
     },
     {
-      "title": "Broadcom, AI 랙 임대에 최대 약 $29B backstop 공시",
+      "title": "Nscale S-1에서 고객집중과 NVIDIA 금융연결성 확인",
       "status": "YELLOW",
-      "detail": "고객이 임대료를 지급하지 못할 경우 자산 처분가치 부족분을 지원하는 구조다. 현재 현금지급은 없고 공정가치도 중요하지 않지만 GPU·가속기 중고가치 하락 시 손실 민감도가 높아질 수 있다."
+      "detail": "Nscale의 2026년 상반기 최대 고객 매출 비중은 52%였고, 최소 31억달러의 전환형 조달 중 10억달러를 NVIDIA가 제공할 예정이다. 계약 수요는 크지만 소수 고객의 인도·가용성 조건 이행에 현금흐름이 집중돼 있다."
     },
     {
-      "title": "AI 생태계 내부의 자본·매출 순환성 부각",
+      "title": "Neocloud 조달 성공은 신용수축보다 양극화를 시사",
       "status": "YELLOW",
-      "detail": "Neocloud와 데이터센터 플랫폼이 소수 hyperscaler·AI 모델기업에 집중되고 대형 공급자가 투자·구매약정·보증까지 제공하는 구조가 확대되고 있다. 아직 부실 전염은 아니지만 최종 수요자의 현금창출이 핵심 취약점이 됐다."
+      "detail": "CoreWeave 전환사채 증액과 Lambda의 투자등급 SPV 대출 성공은 시장이 닫히지 않았음을 보여준다. 다만 투자등급 offtaker와 상환재원이 명확한 자산은 낮은 비용으로 조달되는 반면, 고레버리지 범용 차주는 더 높은 위험할인율을 요구받는 구조다."
     }
   ],
-  "contagion": "OpenAI 등 대형 AI 수요자의 계약 이행이나 현금창출이 기대에 미달하면 Oracle 연계 SPV와 neocloud의 대출가격이 먼저 하락하고, 은행의 미매각 신디케이션 물량과 private credit 손실이 증가할 수 있다. 이후 GPU·AI 랙의 처분가치 하락이 겹치면 NVIDIA의 임대·용량 지원, Broadcom의 lease backstop, Meta의 RVG 같은 조건부 노출이 실제 현금의무로 전환되는 경로가 핵심 전염 위험이다.",
-  "investor_view": "현재 신용지표만으로 NVIDIA나 현금창출력이 강한 Microsoft·Alphabet·Meta·Amazon을 고레버리지 neocloud와 동일한 위험군으로 보기는 어렵다. AI 수요는 견조하지만 Oracle 연계 프로젝트와 외부조달 의존도가 높은 neocloud·개발사·SPV에는 더 높은 위험할인율이 필요한 구간이다. 신규 비중 확대 전에는 Project Jupiter 대출가격의 추가 하락 여부, 복수 프로젝트로의 할인 확산, GPU 보장형 임대료와 중고가격, CoreWeave 등 주요 차주의 차환 조건을 함께 확인할 필요가 있다.",
+  "contagion": "OpenAI 등 최종 수요자의 계약이행이나 Project Jupiter 같은 대형 캠퍼스의 인허가·전력 일정이 지연되면 SPV 대출가격 하락과 은행의 미매각 신디케이션 물량 증가로 이어질 수 있다. 이후 neocloud의 차환비용 상승과 GPU 담보가치 재평가를 거쳐 private credit 및 은행 손실로 전이되고, 최종적으로 NVIDIA의 토지·전력·셸 보증이나 hyperscaler의 장기 임대·구매 약정이 실제 현금노출로 전환될 수 있다.",
+  "investor_view": "현재 수요와 GPU 가격만 보면 NVIDIA 및 핵심 hyperscaler 포지션의 신용위험이 즉각적인 축소를 요구하는 단계라고 보기는 어렵다. 다만 NVIDIA는 반도체 공급자에서 인프라 보증자로 신용노출이 확장되고 있어 보증 한도의 실제 발효액과 OpenAI 관련 상대방 위험을 별도로 평가해야 한다. 외부조달 의존도가 높은 neocloud와 프로젝트 SPV에는 대형 hyperscaler보다 높은 위험할인율이 필요하며, 신규 비중 확대 전 Project Jupiter 대출가격, CoreWeave의 순부채·현금소진, Nscale 고객집중도 및 장기금리 방향을 확인할 필요가 있다. Private credit lender와 데이터센터 개발사는 강한 최종 수요가 존재하더라도 공사 지연과 장기금리 상승에 직접 노출된다는 점에서 기술주와 동일하게 평가해서는 안 된다.",
   "orange_triggers": [
-    "Project Jupiter 대출가격이 85센트 이하로 추가 하락하거나 90센트 이하 거래가 다른 Oracle·OpenAI 연계 프로젝트로 확산",
-    "CoreWeave·Lambda·Nebius·Nscale 중 주요 차주의 신규 조달 실패 또는 기존 부채 대비 300bp 이상의 차환금리 상승",
-    "H100·H200·B200 임대료 또는 중고가격이 복수의 독립 시장지표에서 4주 이내 15~20% 이상 동반 하락",
-    "Microsoft·Alphabet·Meta·Amazon 중 2곳 이상이 같은 실적 시즌에 AI 또는 데이터센터 CapEx 지침을 실질 하향",
-    "은행이 AI 프로젝트 신디케이션 물량을 장기간 보유하거나 신규 패키지에 sponsor guarantee·추가 담보·선순위 구조를 일제히 요구",
-    "NVIDIA·Oracle·Meta 등 복수 대형사의 신뢰 가능한 5년 CDS가 단기간에 50bp 이상 동반 확대"
+    "Project Jupiter 대출이 85센트 이하로 추가 하락하거나 다른 Oracle·OpenAI 연계 프로젝트 대출도 90센트 이하로 동반 거래",
+    "CoreWeave·Lambda·Nebius·Nscale 중 주요 차주의 신규 조달 철회, 만기연장 실패 또는 조달금리 급등",
+    "H100·H200·B200 임대가격이 복수의 독립 지수에서 30일 기준 15~20% 이상 동반 하락",
+    "Microsoft·Alphabet·Meta·Amazon 중 2곳 이상이 같은 실적 시즌에 AI 또는 데이터센터 CapEx 지침을 하향",
+    "NVIDIA의 보증 관련 공정가치가 유의미하게 증가하거나 보증 대상 프로젝트에서 임대료 연체·대체 임차인 협상이 시작",
+    "AI 관련 우량채 신규발행에서 반복적인 미달, 대규모 신규발행 프리미엄 또는 은행의 신디케이션 물량 장기 보유가 확인"
   ],
   "red_triggers": [
-    "CoreWeave·Lambda·Nebius·Nscale 등 주요 neocloud의 지급불능, 채무재조정 또는 이자·원금 지급 유예",
-    "Project Jupiter 또는 유사한 대형 AI 데이터센터 SPV의 공사 중단과 대출 원리금 미지급 발생",
-    "NVIDIA·Broadcom·Meta의 보증이나 RVG에서 실제 현금지급 또는 중요 부채 인식 발생",
-    "GPU 및 AI 랙 담보가치가 복수 시장에서 30% 이상 급락하고 대주단이 margin call이나 추가 담보를 요구",
-    "AI 데이터센터 ABS·private credit·신디케이트론 시장이 사실상 폐쇄돼 복수 프로젝트가 자금조달을 취소하거나 장기 연기",
-    "복수 hyperscaler의 CapEx 축소와 복수 neocloud 구조조정이 동시에 발생하며 은행·private credit 펀드가 중요 손실을 인식"
+    "주요 neocloud의 지급불능, 이자 미지급, 채무교환 또는 법정·사적 구조조정 발생",
+    "Project Jupiter 등 100억달러 이상 AI 프로젝트의 공사중단과 대출 원리금 미지급이 동시에 발생",
+    "NVIDIA·Meta 등 sponsor의 RVG·lease guarantee에서 실제 대규모 현금지급 또는 부채 인식 발생",
+    "복수 AI 프로젝트 대출이 70~80센트대로 급락하고 은행 또는 private credit 펀드가 대규모 손실을 인식",
+    "GPU 임대가격과 중고가격이 복수 시장에서 25% 이상 급락하며 GPU 담보대출의 LTV 위반이나 추가 담보 요구가 확산",
+    "주요 hyperscaler 2곳 이상의 CapEx 축소와 복수 neocloud 구조조정이 같은 시기에 발생"
   ],
-  "one_liner": "AI 수요는 아직 꺾이지 않았지만 그 수요를 지탱하는 프로젝트 부채와 조건부 보증의 질은 약해지고 있다.",
+  "one_liner": "AI 수요는 아직 강하지만 그 수요를 금융하는 자본은 더 비싸고 복잡해졌으며 대형 기술기업의 조건부 신용지원에 점점 의존하고 있다.",
   "sources": [
     {
       "name": "U.S. Treasury · Daily Treasury Par Yield Curve Rates",
-      "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve",
-      "date": "2026-09-21"
+      "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202609&type=daily_treasury_yield_curve",
+      "date": "2026-09-22"
     },
     {
       "name": "Reuters · Oracle Project Jupiter debt under pressure",
@@ -108,54 +113,54 @@
       "date": "2026-09-18"
     },
     {
-      "name": "CoreWeave SEC Form 8-K · Convertible notes offering",
-      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000429/crwv-20260917.htm",
-      "date": "2026-09-17"
-    },
-    {
-      "name": "CoreWeave SEC investor presentation · Financing and operating metrics",
-      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000429/crwv2026convertpresentat.htm",
-      "date": "2026-09-17"
+      "name": "Reuters · Corporate bond buyers get picky with flood of AI debt",
+      "url": "https://www.marketscreener.com/news/corporate-bond-buyers-get-picky-with-flood-of-ai-debt-ce785ad8db8ef427",
+      "date": "2026-09-22"
     },
     {
       "name": "NVIDIA SEC Form 10-Q · Guarantees and AI cloud commitments",
       "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
-      "date": "2026-08-26"
+      "date": "2026-08-27"
     },
     {
-      "name": "Broadcom Form 10-Q · AI rack lease backstop",
-      "url": "https://investors.broadcom.com/static-files/96641754-401f-4090-a4ab-210728c83a28",
-      "date": "2026-09-10"
+      "name": "Nscale SEC Form S-1",
+      "url": "https://www.sec.gov/Archives/edgar/data/2110365/000119312526395475/ck0002110365-20260918.htm",
+      "date": "2026-09-18"
     },
     {
-      "name": "Meta SEC Form 10-Q · RVG, leases and contractual commitments",
-      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm",
-      "date": "2026-07-29"
+      "name": "Lambda · $926 million senior secured term loan B",
+      "url": "https://lambda.ai/blog/lambda-closes-926-million-senior-secured-term-loan-b-facility",
+      "date": "2026-08-27"
     },
     {
-      "name": "Microsoft FY2026 Q4 earnings call",
+      "name": "CoreWeave · Upsized $3.7 billion convertible notes offering",
+      "url": "https://www.marketscreener.com/news/coreweave-prices-upsized-3-7-billion-convertible-senior-notes-offering-ce785adadb8ffe2d",
+      "date": "2026-09-18"
+    },
+    {
+      "name": "Ornn Data · GPU Compute Price Index",
+      "url": "https://data.ornn.com/gpu-cloud-price-comparison",
+      "date": "2026-09-22"
+    },
+    {
+      "name": "Microsoft · FY2026 Q4 earnings conference call",
       "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4",
       "date": "2026-07-29"
     },
     {
-      "name": "Meta Q2 2026 results · CapEx guidance",
+      "name": "Alphabet SEC · Q2 2026 results and CapEx",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm",
+      "date": "2026-07-22"
+    },
+    {
+      "name": "Meta · Q2 2026 results and CapEx outlook",
       "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/",
       "date": "2026-07-29"
     },
     {
-      "name": "Amazon Q2 2026 results",
-      "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx?mode=light",
+      "name": "Amazon · Q2 2026 earnings report",
+      "url": "https://www.aboutamazon.com/news/company-news/amazon-earnings-q2-2026-report",
       "date": "2026-07-30"
-    },
-    {
-      "name": "Nebius · $775M secured GPU financing",
-      "url": "https://nebius.com/newsroom/nebius-raises-775-million-in-first-secured-debt-financing-to-accelerate-global-buildout",
-      "date": "2026-07-17"
-    },
-    {
-      "name": "CCIR · Daily GPU compute reference rates",
-      "url": "https://ccir.io/",
-      "date": "2026-09-21"
     }
   ],
   "trend": {
