@@ -1,13 +1,13 @@
 {
   "month": "2026-09",
-  "available_count": 4,
-  "avg_risk_score": 2.87,
-  "max_risk_score": 2.9,
+  "available_count": 5,
+  "avg_risk_score": 2.88,
+  "max_risk_score": 2.92,
   "min_risk_score": 2.85,
-  "change": 0.05,
+  "change": 0.07,
   "first_date": "2026-09-22",
-  "last_date": "2026-09-25",
+  "last_date": "2026-09-26",
   "risk_level_days": {
-    "YELLOW+": 4
+    "YELLOW+": 5
   }
 }
