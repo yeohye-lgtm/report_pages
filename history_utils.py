@@ -1,114 +1,139 @@
+"""Read-only historical inputs; version-aware counts; never delete daily JSON."""
 from __future__ import annotations
-
+import hashlib
 import html
 import json
+import warnings
 from collections import Counter
 from datetime import date, timedelta
 from pathlib import Path
 
 HTML_RETENTION_DAYS = 365
-WINDOWS = (30, 90, 180)
+WINDOWS = (30,90,180)
 
 
-def parse_date(value):
-    try:
-        return date.fromisoformat(str(value))
-    except (TypeError, ValueError):
-        return None
+def dump_json(data):
+    return json.dumps(data, ensure_ascii=False, indent=2) + '\n'
 
 
-def archive_path(archive_dir, report_date, suffix):
-    return archive_dir / f"{report_date:%Y}" / f"{report_date:%m}" / f"{report_date:%Y-%m-%d}{suffix}"
+def atomic_write(path, content):
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_name(path.name+'.tmp')
+    temporary.write_text(content, encoding='utf-8')
+    temporary.replace(path)
 
 
-def migrate_legacy_archive(archive_dir):
-    archive_dir.mkdir(parents=True, exist_ok=True)
-    for path in list(archive_dir.glob("*.json")) + list(archive_dir.glob("*.html")):
-        report_date = parse_date(path.stem)
-        if report_date is None:
-            continue
-        destination = archive_path(archive_dir, report_date, path.suffix)
-        destination.parent.mkdir(parents=True, exist_ok=True)
-        path.replace(destination)
+def archive_path(root, day, suffix):
+    return Path(root)/f'{day:%Y}'/f'{day:%m}'/(day.isoformat()+suffix)
 
 
-def load_daily_reports(archive_dir):
-    migrate_legacy_archive(archive_dir)
-    reports = []
-    for path in archive_dir.rglob("*.json"):
-        report_date = parse_date(path.stem)
-        if report_date is None:
+def load_daily_reports(root):
+    rows = {}
+    for path in sorted(Path(root).rglob('*.json')):
+        try:
+            day = date.fromisoformat(path.stem)
+        except ValueError:
             continue
         try:
-            data = json.loads(path.read_text(encoding="utf-8"))
-            score = float(data["risk_score"])
-        except (OSError, KeyError, TypeError, ValueError, json.JSONDecodeError):
+            data = json.loads(path.read_text(encoding='utf-8'))
+            if not isinstance(data,dict) or data.get('date') != day.isoformat():
+                raise ValueError('date mismatch')
+        except (OSError,ValueError) as exc:
+            warnings.warn(f'Invalid archive {path.name}: {type(exc).__name__}')
             continue
-        if not isinstance(data, dict):
-            continue
-        data = dict(data)
-        data["_report_date"] = report_date.isoformat()
-        data["_risk_score"] = score
-        reports.append(data)
-    return sorted(reports, key=lambda item: item["_report_date"])
+        if day in rows and rows[day] != data:
+            raise ValueError('Conflicting duplicate daily JSON: '+day.isoformat())
+        rows[day] = data
+    return [rows[day] for day in sorted(rows)]
 
 
-def calculate_trend(reports, end_date, days):
-    cutoff = end_date - timedelta(days=days - 1)
-    selected = [item for item in reports if cutoff <= parse_date(item["_report_date"]) <= end_date]
-    selected.sort(key=lambda item: item["_report_date"])
-    scores = [item["_risk_score"] for item in selected]
-    if not scores:
-        return {"days": days, "available_count": 0, "avg": None, "max": None, "min": None, "change": None}
-    return {"days": days, "available_count": len(scores), "avg": round(sum(scores) / len(scores), 2), "max": round(max(scores), 2), "min": round(min(scores), 2), "change": round(scores[-1] - scores[0], 2)}
+def comparable(report, version='1.0'):
+    return (report.get('rules_version')==version and
+            report.get('assessment_state') in ('assessed','provisional') and
+            report.get('risk_level') in ('GREEN','YELLOW','ORANGE','RED'))
 
 
-def calculate_level_streak(reports, current_level):
-    expected = str(current_level or "UNKNOWN").upper()
-    streak = 0
-    for item in sorted(reports, key=lambda x: x["_report_date"], reverse=True):
-        if str(item.get("risk_level", "UNKNOWN")).upper() != expected:
-            break
-        streak += 1
-    return streak
+def history_payload(records, current):
+    day = date.fromisoformat(current['date'])
+    rows = {r['date']:r for r in records if r['date'] <= current['date']}
+    # A layout-only rerender must not substitute for the original dated observation.
+    if current.get('assessment_state') != 'not_revalidated':
+        rows[current['date']] = current
+    selected = [r for r in rows.values() if comparable(r)]
+    trend = {'same_rules_count':len(selected)}
+    for n in WINDOWS:
+        cutoff = (day-timedelta(days=n-1)).isoformat()
+        window = [r for r in selected if cutoff <= r['date'] <= current['date']]
+        trend['days_'+str(n)] = dict(days=n, available_count=len(window),
+            level_days=dict(Counter(r['risk_level'] for r in window)),
+            first_date=min((r['date'] for r in window),default=None),
+            last_date=max((r['date'] for r in window),default=None))
+    streak=0; cursor=day
+    if comparable(current):
+        while True:
+            r=rows.get(cursor.isoformat())
+            if not r or not comparable(r) or r['risk_level']!=current['risk_level']: break
+            streak+=1; cursor-=timedelta(days=1)
+    return dict(trend=trend, current_level_streak_days=streak, history_count=len(rows))
 
 
-def monthly_summary(reports, month):
-    selected = sorted([x for x in reports if x["_report_date"].startswith(month)], key=lambda x: x["_report_date"])
-    scores = [x["_risk_score"] for x in selected]
-    levels = Counter(str(x.get("risk_level", "UNKNOWN")).upper() for x in selected)
-    return {"month": month, "available_count": len(selected), "avg_risk_score": round(sum(scores)/len(scores), 2) if scores else None, "max_risk_score": round(max(scores), 2) if scores else None, "min_risk_score": round(min(scores), 2) if scores else None, "change": round(scores[-1]-scores[0], 2) if scores else None, "first_date": selected[0]["_report_date"] if selected else None, "last_date": selected[-1]["_report_date"] if selected else None, "risk_level_days": dict(sorted(levels.items()))}
+def monthly_summary(records, month, as_of):
+    rows=[r for r in records if r['date'].startswith(month) and r['date']<=as_of.isoformat()]
+    groups={}
+    for r in rows:
+        version=r.get('rules_version','legacy')
+        group=groups.setdefault(version,dict(report_count=0,eligible_count=0,level_days={},limited_count=0))
+        group['report_count']+=1
+        eligible=comparable(r,version) if version!='legacy' else False
+        if eligible:
+            group['eligible_count']+=1
+            level=r['risk_level'];group['level_days'][level]=group['level_days'].get(level,0)+1
+        else:group['limited_count']+=1
+    counts=Counter(a['id'] for r in rows if comparable(r) for a in r.get('axes',[]) if a.get('stress'))
+    return dict(schema_version=2,month=month,as_of=as_of.isoformat(),
+        period_state='in_progress' if month==as_of.strftime('%Y-%m') else 'closed_calendar',
+        report_count=len(rows),first_date=min((r['date'] for r in rows),default=None),
+        last_date=max((r['date'] for r in rows),default=None),by_rules_version=groups,
+        stress_axis_report_counts=dict(counts),
+        note='보고서 기록 수입니다. 독립 시장 관측 수가 아닙니다. 기존 소수점 점수는 평균내지 않습니다.')
 
 
 def monthly_html(summary):
-    def v(key):
-        return "확인 제한" if summary.get(key) is None else str(summary[key])
-    levels = " · ".join(f"{html.escape(k)} {n}일" for k, n in summary.get("risk_level_days", {}).items()) or "데이터 없음"
-    return f'''<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI 투자리스크 월간 요약 · {html.escape(summary["month"])}</title><style>body{{margin:0;background:#090b0e;color:#eef2f5;font-family:system-ui,sans-serif}}main{{max-width:520px;margin:auto;padding:24px 16px}}.card{{margin-top:16px;padding:16px;border:1px solid #2a313a;border-radius:18px;background:#15191f}}.grid{{display:grid;grid-template-columns:1fr 1fr;gap:10px}}.metric{{padding:13px;background:#11151a;border:1px solid #2a313a;border-radius:14px}}.k{{color:#97a2ad;font-size:11px}}.v{{margin-top:8px;font-size:21px;font-weight:800}}a{{color:#9db8ee}}</style></head><body><main><div class="k">AI CREDIT RISK MONITOR · MONTHLY SUMMARY</div><h1>{html.escape(summary["month"])} 월간 요약</h1><div class="k">{summary.get("first_date") or ""} ~ {summary.get("last_date") or ""}</div><section class="card"><div class="grid"><div class="metric"><div class="k">평균</div><div class="v">{v("avg_risk_score")}</div></div><div class="metric"><div class="k">최고</div><div class="v">{v("max_risk_score")}</div></div><div class="metric"><div class="k">최저</div><div class="v">{v("min_risk_score")}</div></div><div class="metric"><div class="k">변화폭</div><div class="v">{v("change")}</div></div></div></section><section class="card"><div class="k">위험단계 누적일수</div><p>{levels}</p></section><section class="card"><a href="../../latest.html">최신 리포트로 돌아가기</a></section></main></body></html>'''
+    e=lambda x:html.escape(str(x),quote=True)
+    blocks=''
+    for version,g in summary['by_rules_version'].items():
+        states=' · '.join(f'{e(k)} {v}일' for k,v in g['level_days'].items()) or '새 기준 비교에서 제외'
+        blocks+=f'<section><h2>기준 {e(version)}</h2><p>전체 {g["report_count"]}개 · 비교 가능 {g["eligible_count"]}개</p><p>{states}</p><small>확인 제한·이전 기준 {g["limited_count"]}개</small></section>'
+    return '<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI 월간 요약 '+e(summary['month'])+'</title><style>body{margin:0;background:#0b0e12;color:#edf1f6;font:16px/1.6 system-ui,sans-serif}main{max-width:520px;margin:auto;padding:24px 18px}section{background:#12171e;border:1px solid #27313d;border-radius:18px;padding:18px;margin:15px 0}h1{font-size:24px}h2{font-size:18px}small{color:#a2adbc}a{color:#aacbff}</style><main><h1>'+e(summary['month'])+' 월간 기록</h1><p>'+('월중 집계' if summary['period_state']=='in_progress' else '종료된 월 · 누락 여부 별도 확인')+'</p>'+blocks+'<section><p>'+e(summary['note'])+'</p><small>자료 범위 '+e(summary['first_date'])+' ~ '+e(summary['last_date'])+'</small></section><a href="../../latest.html">오늘 상황판으로 →</a></main></html>'
 
 
-def write_monthly_summaries(summary_dir, reports):
-    summary_dir.mkdir(parents=True, exist_ok=True)
-    links = []
-    for month in sorted({x["_report_date"][:7] for x in reports}):
-        summary = monthly_summary(reports, month)
-        (summary_dir / f"{month}.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-        (summary_dir / f"{month}.html").write_text(monthly_html(summary), encoding="utf-8")
-        links.append({"month": month, "json": f"./summary/monthly/{month}.json", "html": f"./summary/monthly/{month}.html"})
-    return links
+def write_monthly_summaries(root, records, as_of):
+    months=sorted({r['date'][:7] for r in records if r['date']<=as_of.isoformat()})
+    for month in months:
+        data=monthly_summary(records,month,as_of)
+        atomic_write(Path(root)/(month+'.json'),dump_json(data))
+        atomic_write(Path(root)/(month+'.html'),monthly_html(data))
+    return months
 
 
-def build_history_payload(archive_dir, summary_dir, current_date, current_level):
-    reports = load_daily_reports(archive_dir)
-    return {"trend": {f"days_{days}": calculate_trend(reports, current_date, days) for days in WINDOWS}, "current_level_streak_days": calculate_level_streak(reports, current_level), "history_count": len(reports), "monthly_summary": {"current_month": current_date.strftime("%Y-%m"), "json": f"./summary/monthly/{current_date:%Y-%m}.json", "html": f"./summary/monthly/{current_date:%Y-%m}.html", "available": sorted(path.stem for path in summary_dir.glob("*.json"))}}
+def preserve_revision(path):
+    """Retain old bytes when a same-day report is explicitly regenerated."""
+    path=Path(path)
+    if path.exists():
+        digest=hashlib.sha256(path.read_bytes()).hexdigest()[:16]
+        dest=path.parent/'revisions'/(path.stem+'-'+digest+path.suffix)
+        if not dest.exists():
+            dest.parent.mkdir(parents=True,exist_ok=True)
+            dest.write_bytes(path.read_bytes())
 
 
-def cleanup_old_html(archive_dir, today):
-    cutoff = today - timedelta(days=HTML_RETENTION_DAYS - 1)
-    removed = []
-    for path in archive_dir.rglob("*.html"):
-        report_date = parse_date(path.stem)
-        if report_date and report_date < cutoff:
-            removed.append(str(path))
-            path.unlink()
+def cleanup_old_html(root, today):
+    cutoff=today-timedelta(days=HTML_RETENTION_DAYS-1)
+    removed=[]
+    for path in Path(root).rglob('*.html'):
+        try:day=date.fromisoformat(path.name[:10])
+        except ValueError:continue
+        if day<cutoff:
+            path.unlink();removed.append(str(path))
     return removed
