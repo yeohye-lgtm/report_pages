@@ -40,15 +40,31 @@ jobs:
         run: |
           python -m py_compile generate_report.py report_ui.py report_schema.py history_utils.py
           python -m unittest discover -s tests -v
+      # An explicit operator request is required for a paid refresh on a code push.
       - name: Research daily data
-        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.refresh_data)
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.refresh_data) || (github.event_name == 'push' && github.ref == 'refs/heads/main' && contains(github.event.head_commit.message, '[refresh-ai-risk]'))
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
         run: python generate_report.py
       - name: Re-render stored report without API usage
-        if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && !inputs.refresh_data)
+        if: (github.event_name == 'push' && !(github.ref == 'refs/heads/main' && contains(github.event.head_commit.message, '[refresh-ai-risk]'))) || (github.event_name == 'workflow_dispatch' && !inputs.refresh_data)
         run: python generate_report.py --render-only
+      - name: Verify requested live research succeeded
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main' && contains(github.event.head_commit.message, '[refresh-ai-risk]')
+        run: |
+          python - <<'PY'
+          import json
+          from datetime import datetime
+          from pathlib import Path
+          from zoneinfo import ZoneInfo
+          d = json.loads(Path('public/ai-risk/latest.json').read_text(encoding='utf-8'))
+          assert d['date'] == datetime.now(ZoneInfo('Asia/Seoul')).date().isoformat(), 'Fresh report date required'
+          assert d.get('assessment_state') in ('assessed', 'provisional', 'deferred'), 'Live research failed or stored data was reused'
+          assert d.get('api_response_id') and d.get('research_model'), 'Live API provenance required'
+          assert d.get('sources') and d.get('source_verification'), 'Research sources required'
+          print('LIVE RESEARCH VERIFIED', d['date'], d['assessment_state'], 'sources', len(d['sources']))
+          PY
       - name: Mobile layout and interaction checks
         run: python tests/check_browser.py
       - name: Keep test screenshots
