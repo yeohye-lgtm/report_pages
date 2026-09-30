@@ -1,6 +1,13 @@
 name: Defense Risk Daily Report
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'public/defense-risk/**'
+      - 'defense_*.py'
+      - 'defense_prompt.txt'
+      - '.github/workflows/defense-risk-daily.yml'
   schedule:
     - cron: '25 23 * * *'
 permissions:
@@ -20,6 +27,7 @@ jobs:
       - run: python -m pip install 'openai>=1.68,<3'
       - run: python -m py_compile defense_generate.py defense_report_schema.py
       - name: Research and render
+        if: github.event_name != 'push'
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
