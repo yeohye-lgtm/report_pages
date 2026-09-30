@@ -30,3 +30,31 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add public/defense-risk public/.nojekyll
           git diff --cached --quiet || (git commit -m 'daily: update defense risk report' && git push)
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: public
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Verify defense latest
+        run: |
+          python - <<'PY'
+          import urllib.request
+          base='${{ steps.deployment.outputs.page_url }}'.rstrip('/')
+          for p in ('defense-risk/latest.html','defense-risk/latest.json','defense-risk/status.json'):
+              with urllib.request.urlopen(base+'/'+p,timeout=30) as r:
+                  assert r.status==200 and len(r.read())>20, p
+          print('DEFENSE PAGES VERIFIED')
+          PY
