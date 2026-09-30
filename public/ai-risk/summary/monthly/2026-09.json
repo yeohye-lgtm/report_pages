@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
   "month": "2026-09",
-  "as_of": "2026-09-29",
+  "as_of": "2026-09-30",
   "period_state": "in_progress",
-  "report_count": 8,
+  "report_count": 9,
   "first_date": "2026-09-22",
-  "last_date": "2026-09-29",
+  "last_date": "2026-09-30",
   "by_rules_version": {
     "legacy": {
       "report_count": 7,
@@ -14,18 +14,20 @@
       "limited_count": 7
     },
     "1.0": {
-      "report_count": 1,
-      "eligible_count": 1,
+      "report_count": 2,
+      "eligible_count": 2,
       "level_days": {
-        "YELLOW": 1
+        "YELLOW": 1,
+        "ORANGE": 1
       },
       "limited_count": 0
     }
   },
   "stress_axis_report_counts": {
-    "funding": 1,
-    "borrower": 1,
-    "contagion": 1
+    "funding": 2,
+    "borrower": 2,
+    "contagion": 2,
+    "gpu": 1
   },
   "note": "보고서 기록 수입니다. 독립 시장 관측 수가 아닙니다. 기존 소수점 점수는 평균내지 않습니다."
 }
