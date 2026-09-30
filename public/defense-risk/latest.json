@@ -1,0 +1,143 @@
+{
+  "date": "2026-09-30",
+  "generated_at": "2026-09-30T18:20:00+09:00",
+  "industry_risk": "GREEN",
+  "price_regime": "깊은 조정",
+  "headline": "수요·예산은 견조하고 가격은 고점 대비 크게 조정",
+  "reason": "2027 국방예산 확대와 수주 환경은 우호적이나 보유 2종목 가격은 52주 고점 대비 약 39% 낮다.",
+  "next_check": "한화·LIG 신규계약의 매출·마진 전환과 외국인·기관 수급",
+  "investor_view": "산업 펀더멘털과 가격 조정을 분리해 본다. 깊은 조정 자체는 저평가나 매수 신호가 아니며, 실적 추정·마진·수급이 함께 개선되는지 확인한다.",
+  "industry_axes": [
+    {
+      "id": "orders",
+      "status": "GREEN",
+      "coverage": "sufficient",
+      "change": "unchanged",
+      "meaning": "본계약·백로그 환경 견조",
+      "stress": false
+    },
+    {
+      "id": "budget",
+      "status": "GREEN",
+      "coverage": "sufficient",
+      "change": "better",
+      "meaning": "한국 방위력개선비 확대",
+      "stress": false
+    },
+    {
+      "id": "execution",
+      "status": "YELLOW",
+      "coverage": "partial",
+      "change": "better",
+      "meaning": "개별 생산·안전 후속 관찰",
+      "stress": true
+    },
+    {
+      "id": "profitability",
+      "status": "GREEN",
+      "coverage": "partial",
+      "change": "unchanged",
+      "meaning": "업계 수익성 훼손 확인 안 됨",
+      "stress": false
+    }
+  ],
+  "holdings": [
+    {
+      "id": "hanwha_aerospace",
+      "name": "한화에어로스페이스",
+      "status": "YELLOW",
+      "change": "better",
+      "reason": "6월 대전 사고 후속 위험은 남아 있으나 해외 납품과 신규 본계약이 실행 훼손 우려를 완화했다."
+    },
+    {
+      "id": "lig_nex1",
+      "name": "LIG넥스원",
+      "status": "YELLOW",
+      "change": "unchanged",
+      "reason": "수주·영업 성장성은 유지되지만 금융비용·자본효율과 신규 해외사업의 본계약 전환을 계속 확인한다."
+    }
+  ],
+  "price": {
+    "as_of": "2026-09-30",
+    "hanwha_close": 1003000,
+    "hanwha_high_52w": 1655000,
+    "hanwha_drawdown_pct": -39.4,
+    "lig_close": 678000,
+    "lig_high_52w": 1118000,
+    "lig_drawdown_pct": -39.4,
+    "interpretation": "두 종목 모두 고점 대비 깊은 조정이다. 가격 하락만으로 펀더멘털 훼손 또는 저평가를 단정하지 않는다."
+  },
+  "events": [
+    {
+      "date": "2026-06-01",
+      "target": "hanwha_aerospace",
+      "direction": "negative",
+      "title": "대전사업장 사고",
+      "summary": "안전·생산·법률 실행리스크가 현실화."
+    },
+    {
+      "date": "2026-07-31",
+      "target": "hanwha_aerospace",
+      "direction": "positive",
+      "title": "2Q 실적·해외납품 확인",
+      "summary": "지상방산 수주잔고와 계획 납품 진행을 확인."
+    },
+    {
+      "date": "2026-09-03",
+      "target": "industry",
+      "direction": "positive",
+      "title": "2027 국방예산 정부안",
+      "summary": "총 73.28조원(+8.2%), 방위력개선비 +13.8%."
+    },
+    {
+      "date": "2026-09-14",
+      "target": "hanwha_aerospace",
+      "direction": "positive",
+      "title": "크로아티아 천무 본계약",
+      "summary": "유럽 본계약 추가로 수주 질을 보강."
+    },
+    {
+      "date": "2026-09-30",
+      "target": "market",
+      "direction": "mixed",
+      "title": "보유종목 고점 대비 약 39% 조정",
+      "summary": "산업 수요와 별개로 시장가격 조정국면을 독립 표시."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "name": "방위사업청 2027 국방예산 정부안",
+      "url": "https://www.dapa.go.kr/dapa/doc/selectDoc.do?bbsSeq=326&currentPageNo=1&docSeq=59116&menuSeq=3069&recordCountPerPage=10",
+      "published_at": "2026-09-03"
+    },
+    {
+      "id": "S2",
+      "name": "한화에어로스페이스 가격 데이터",
+      "url": "https://kr.investing.com/equities/samsung-techwin-historical-data",
+      "published_at": null
+    },
+    {
+      "id": "S3",
+      "name": "LIG넥스원 가격 데이터",
+      "url": "https://kr.investing.com/equities/lig-nex1-co-ltd-historical-data",
+      "published_at": null
+    },
+    {
+      "id": "S4",
+      "name": "한화에어로스페이스 2Q 2026",
+      "url": "https://www.hanwha.co.kr/newsroom/media_center/news/news_view.do?seq=16046",
+      "published_at": "2026-07-31"
+    },
+    {
+      "id": "S5",
+      "name": "한화 크로아티아 천무 계약",
+      "url": "https://www.hanwha.com/newsroom/news/press-releases/hanwha-aerospace-to-supply-chunmoo-mrls-to-croatia.do",
+      "published_at": "2026-09-14"
+    }
+  ],
+  "data_gaps": [
+    "LIG 9월 30일 완결 종가는 공개 검색에서 재검증되지 않아 9월 29일 종가를 사용.",
+    "동일 기간 양사 외국인·기관 누적수급은 최초 보고서 판정에 미반영."
+  ]
+}
