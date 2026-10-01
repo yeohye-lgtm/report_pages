@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "month": "2026-09",
-  "as_of": "2026-09-30",
-  "period_state": "in_progress",
+  "as_of": "2026-10-01",
+  "period_state": "closed_calendar",
   "report_count": 9,
   "first_date": "2026-09-22",
   "last_date": "2026-09-30",
