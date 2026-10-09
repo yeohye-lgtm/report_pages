@@ -1,24 +1,24 @@
 {
   "schema_version": 2,
   "month": "2026-10",
-  "as_of": "2026-10-08",
+  "as_of": "2026-10-09",
   "period_state": "in_progress",
-  "report_count": 4,
+  "report_count": 5,
   "first_date": "2026-10-02",
-  "last_date": "2026-10-07",
+  "last_date": "2026-10-09",
   "by_rules_version": {
     "1.0": {
-      "report_count": 4,
-      "eligible_count": 4,
+      "report_count": 5,
+      "eligible_count": 5,
       "level_days": {
-        "ORANGE": 4
+        "ORANGE": 5
       },
       "limited_count": 0
     }
   },
   "stress_axis_report_counts": {
-    "funding": 4,
-    "borrower": 4,
+    "funding": 5,
+    "borrower": 5,
     "gpu": 2,
     "demand": 1
   },
