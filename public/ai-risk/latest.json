@@ -1,447 +1,97 @@
 {
-  "date": "2026-10-11",
-  "headline": "수요 견조, 차주 레버리지 경계 지속",
-  "reason": "클라우드 수요는 강하지만 CoreWeave 부채·고객집중이 상쇄",
-  "summary": "대형 클라우드사의 AI 인프라 수요와 매출 성장은 계속 확인됐다. 다만 CoreWeave의 높은 부채와 외부자금 의존, 관련 계약 집중은 국지적 신용위험으로 남아 있다.",
+  "date": "2026-10-12",
+  "schema_version": 2,
+  "ui_version": "2.0.0",
+  "rules_version": "1.0",
+  "risk_level": "UNKNOWN",
+  "risk_score": null,
+  "watch": "",
+  "assessment_state": "failed",
   "change": "unavailable",
+  "generated_at": "2026-10-12T11:22:50+09:00",
+  "headline": "자료 확인에 실패해 오늘 판정을 보류합니다.",
+  "reason": "이전 등급을 오늘의 판단으로 승계하지 않습니다.",
+  "summary": "수집 또는 검증 실패. 이전 보고서와 시장 변화를 비교하지 않습니다.",
   "changes": [],
-  "changes_note": "새 판정 기준 적용 · 이전 등급과 비교 불가",
-  "next_check": "CoreWeave 3분기 현금흐름·부채서비스와 CDS 재확인",
-  "investor_view": "수요 지표만 보면 AI 인프라 투자 축소 신호는 제한적이다. 다만 CoreWeave의 운영현금보다 큰 투자·부채서비스 수요가 지속되므로, 신규 조달조건 악화나 주요 고객 계약 변경이 확인되면 관련 채권·데이터센터 사업자 위험을 재평가할 필요가 있다.",
+  "changes_note": "데이터 확인 제한 · 시장 변화 비교 불가",
+  "next_check": "자료 수집 재실행과 출처 검증 결과",
+  "investor_view": "이 화면은 오늘의 매매 판단 근거로 사용하지 마세요.",
   "assessment_reasons": [
-    "Microsoft·Alphabet·Amazon의 클라우드 매출이 두 자릿수 이상 성장했다.",
-    "CoreWeave 총부채가 356억달러이고 반기 부채서비스 현금지출이 62억달러였다.",
-    "CoreWeave는 9월 전환사채 발행을 완료해 단기 조달 접근성은 유지했다.",
-    "주요 고객과 공급자 간 장기 계약 집중으로 개별 차주 충격의 전달 경로가 존재한다."
+    "새로 검증된 자료가 부족합니다."
   ],
-  "counter_evidence": [
-    "CoreWeave는 2026-06-30 기준 총유동성 155.5억달러를 공시했다.",
-    "CoreWeave의 상반기 영업현금흐름은 36.6억달러로 전년 적자에서 개선됐다.",
-    "Nebius는 2026-06-30 기준 현금 80.4억달러를 보유했다.",
-    "NVIDIA·Meta 등 연결 주체에서 실제 보증 이행이나 손실 인식은 확인되지 않았다."
-  ],
+  "counter_evidence": [],
   "data_gaps": [
-    "NVIDIA·Oracle·Meta의 최신 검증 가능 CDS 값 미확인",
-    "ABS·사모신용·구조화금융의 최신 발행 스프레드 비교 제한",
-    "Lambda의 최신 감사 재무·만기구조 공개자료 제한",
-    "동일 GPU 기종·계약기간 기준 임대료와 가동률 자료 미확인",
-    "중고 GPU 실거래가격과 담보잔존가치 자료 미확인"
+    "수집·검증 오류 유형: ValueError"
   ],
-  "contagion": "계약·투자 연결성은 확인되지만 보증 이행이나 실제 손실 이전은 확인되지 않았다.",
+  "sources": [],
   "axes": [
     {
       "id": "funding",
-      "status": "YELLOW",
-      "coverage": "partial",
-      "meaning": "시장 접근은 유지, 검증 공백 존재",
+      "status": "UNKNOWN",
+      "coverage": "limited",
+      "meaning": "최신 자료 확인 실패",
       "change": "unavailable",
-      "explanation": "장기 국채금리는 높은 수준이지만 CoreWeave의 대규모 전환사채 발행은 완료됐다. 기업 CDS와 구조화금융 가격 자료가 없어 전반적 조달여건 확인은 부분적이다.",
+      "explanation": "현재 판정에 쓸 자료를 검증하지 못했습니다.",
       "stress": false,
       "cashflow_impact": false,
-      "event_ids": [
-        "E1"
-      ],
-      "items": [
-        {
-          "label": "미국 10년물 국채수익률",
-          "value": "5.24%",
-          "note": "미 재무부 일일 명목 파수익률",
-          "observed_at": "2026-10-09",
-          "comparison": "2026-10-01과 동일",
-          "source_ids": [
-            "S1"
-          ],
-          "included": true
-        },
-        {
-          "label": "미국 30년물 국채수익률",
-          "value": "5.60%",
-          "note": "미 재무부 일일 명목 파수익률",
-          "observed_at": "2026-10-09",
-          "comparison": "2026-10-01의 5.61% 대비 소폭 하락",
-          "source_ids": [
-            "S1"
-          ],
-          "included": true
-        },
-        {
-          "label": "CoreWeave 전환사채 조달",
-          "value": "순유입 41.37억달러·쿠폰 2.875%",
-          "note": "2033년 만기 전환사채; 2026-09-17 가격 결정, 2026-09-22 계약 공시",
-          "observed_at": "2026-09-22",
-          "comparison": "발행 계획이 아닌 완료된 조달",
-          "source_ids": [
-            "S2"
-          ],
-          "included": true
-        },
-        {
-          "label": "NVIDIA·Oracle·Meta CDS",
-          "value": null,
-          "note": "검증 가능한 최신 공개 호가 미확인",
-          "observed_at": null,
-          "comparison": "판정 제외",
-          "source_ids": [],
-          "included": false
-        }
-      ]
+      "event_ids": [],
+      "items": []
     },
     {
       "id": "demand",
-      "status": "GREEN",
-      "coverage": "sufficient",
-      "meaning": "AI 인프라 수요와 매출 견조",
+      "status": "UNKNOWN",
+      "coverage": "limited",
+      "meaning": "최신 자료 확인 실패",
       "change": "unavailable",
-      "explanation": "Microsoft·Alphabet·Amazon에서 클라우드 매출 가속과 대규모 설비투자가 함께 확인됐다. Meta도 투자계획을 유지했으나 비용 증가와 낮은 잉여현금흐름은 반대 신호다.",
+      "explanation": "현재 판정에 쓸 자료를 검증하지 못했습니다.",
       "stress": false,
       "cashflow_impact": false,
-      "event_ids": [
-        "E2"
-      ],
-      "items": [
-        {
-          "label": "Microsoft Azure 성장률",
-          "value": "+43% YoY",
-          "note": "FY2026 4분기 Azure 및 기타 클라우드 서비스 매출 증가율",
-          "observed_at": "2026-06-30",
-          "comparison": "FY2026 3분기 40%보다 가속",
-          "source_ids": [
-            "S4"
-          ],
-          "included": true
-        },
-        {
-          "label": "Microsoft 분기 CapEx",
-          "value": "410억달러",
-          "note": "약 3분의 2가 GPU·CPU 등 단기 내용연수 자산",
-          "observed_at": "2026-06-30",
-          "comparison": "직전 분기 319억달러보다 증가",
-          "source_ids": [
-            "S4"
-          ],
-          "included": true
-        },
-        {
-          "label": "Alphabet Google Cloud",
-          "value": "매출 247.7억달러·+82% YoY",
-          "note": "AI 인프라와 AI 솔루션 수요가 성장 동력으로 공시됨",
-          "observed_at": "2026-06-30",
-          "comparison": "성장 가속 확인",
-          "source_ids": [
-            "S5"
-          ],
-          "included": true
-        },
-        {
-          "label": "Amazon AWS",
-          "value": "매출 +37% YoY",
-          "note": "18개 분기 중 가장 빠른 성장; 연환산 매출 1,690억달러",
-          "observed_at": "2026-06-30",
-          "comparison": "수요 둔화보다 가속 신호",
-          "source_ids": [
-            "S7"
-          ],
-          "included": true
-        },
-        {
-          "label": "Meta 2026 CapEx 전망",
-          "value": "1,300억~1,450억달러",
-          "note": "금융리스 원금 포함; 하단을 기존 1,250억달러에서 상향",
-          "observed_at": "2026-07-29",
-          "comparison": "투자계획 하단 상향",
-          "source_ids": [
-            "S6"
-          ],
-          "included": true
-        },
-        {
-          "label": "Meta 분기 잉여현금흐름",
-          "value": "7.84억달러",
-          "note": "CapEx 310.8억달러와 비용 증가로 현금여력 축소",
-          "observed_at": "2026-06-30",
-          "comparison": "강한 매출과 대비되는 반대 근거",
-          "source_ids": [
-            "S6"
-          ],
-          "included": true
-        }
-      ]
+      "event_ids": [],
+      "items": []
     },
     {
       "id": "borrower",
-      "status": "YELLOW",
-      "coverage": "partial",
-      "meaning": "고부채 차주의 현금부담 지속",
+      "status": "UNKNOWN",
+      "coverage": "limited",
+      "meaning": "최신 자료 확인 실패",
       "change": "unavailable",
-      "explanation": "CoreWeave는 높은 부채와 고객집중, 투자자금 의존이 확인되며 실제 부채서비스 현금부담도 크다. 다만 유동성 확대와 신규 조달 완료로 중대한 지급·차환 문제는 확인되지 않았다.",
-      "stress": true,
-      "cashflow_impact": true,
-      "event_ids": [
-        "E1"
-      ],
-      "items": [
-        {
-          "label": "CoreWeave 총부채",
-          "value": "356억달러",
-          "note": "미사용 약정 100억달러와 함께 공시",
-          "observed_at": "2026-06-30",
-          "comparison": "높은 절대 부채부담",
-          "source_ids": [
-            "S3"
-          ],
-          "included": true
-        },
-        {
-          "label": "CoreWeave 총유동성",
-          "value": "155.53억달러",
-          "note": "현금 55.24억달러와 기존 시설 가용액 100.14억달러 포함",
-          "observed_at": "2026-06-30",
-          "comparison": "2025-12-31의 68.62억달러보다 증가",
-          "source_ids": [
-            "S3"
-          ],
-          "included": true
-        },
-        {
-          "label": "CoreWeave 부채서비스",
-          "value": "상반기 62억달러",
-          "note": "원금 52억달러와 이자 9.82억달러; 영업현금흐름은 36.63억달러",
-          "observed_at": "2026-06-30",
-          "comparison": "외부조달 의존을 보여주는 실제 현금부담",
-          "source_ids": [
-            "S3"
-          ],
-          "included": true
-        },
-        {
-          "label": "CoreWeave 고객집중",
-          "value": "상위 3개 고객 72%",
-          "note": "분기 매출 비중 36%·26%·10%; Meta의 최대 210억달러 계약 포함",
-          "observed_at": "2026-06-30",
-          "comparison": "2025년 단일 최대 고객 71%보다는 분산",
-          "source_ids": [
-            "S3"
-          ],
-          "included": true
-        },
-        {
-          "label": "Nebius 현금",
-          "value": "80.42억달러",
-          "note": "제한현금 제외 현금 및 현금성자산",
-          "observed_at": "2026-06-30",
-          "comparison": "단기 유동성 완충 확인",
-          "source_ids": [
-            "S8"
-          ],
-          "included": true
-        },
-        {
-          "label": "Lambda 재무상태",
-          "value": "확인 제한",
-          "note": "최신 감사 재무와 상세 만기구조를 공개 원문에서 검증하지 못함",
-          "observed_at": null,
-          "comparison": "판정 제외",
-          "source_ids": [],
-          "included": false
-        }
-      ]
+      "explanation": "현재 판정에 쓸 자료를 검증하지 못했습니다.",
+      "stress": false,
+      "cashflow_impact": false,
+      "event_ids": [],
+      "items": []
     },
     {
       "id": "gpu",
       "status": "UNKNOWN",
       "coverage": "limited",
-      "meaning": "동일 조건 가격자료 확인 제한",
+      "meaning": "최신 자료 확인 실패",
       "change": "unavailable",
-      "explanation": "공개 원문에서 동일 GPU 기종·서비스 형태·계약기간 기준의 임대료와 가동률 비교값을 확보하지 못했다. 중고 실거래와 담보잔존가치도 판정에서 제외했다.",
+      "explanation": "현재 판정에 쓸 자료를 검증하지 못했습니다.",
       "stress": false,
       "cashflow_impact": false,
       "event_ids": [],
-      "items": [
-        {
-          "label": "동일 조건 GPU 임대료·가동률",
-          "value": null,
-          "note": "기종·형태·계약기간·방법론이 일치하는 최신 비교자료 미확인",
-          "observed_at": null,
-          "comparison": "판정 제외",
-          "source_ids": [],
-          "included": false
-        },
-        {
-          "label": "중고 GPU 실거래가격",
-          "value": null,
-          "note": "검증 가능한 실제 거래가격 미확인",
-          "observed_at": null,
-          "comparison": "판정 제외",
-          "source_ids": [],
-          "included": false
-        },
-        {
-          "label": "GPU 담보잔존가치",
-          "value": null,
-          "note": "대출 담보평가의 최신 공개 원문 미확인",
-          "observed_at": null,
-          "comparison": "판정 제외",
-          "source_ids": [],
-          "included": false
-        }
-      ]
+      "items": []
     },
     {
       "id": "contagion",
-      "status": "YELLOW",
-      "coverage": "partial",
-      "meaning": "계약 연결성은 있으나 손실 미전이",
+      "status": "UNKNOWN",
+      "coverage": "limited",
+      "meaning": "최신 자료 확인 실패",
       "change": "unavailable",
-      "explanation": "NVIDIA·Meta·데이터센터 공급자와 CoreWeave 사이의 투자·구매·매출 의존이 확인된다. 그러나 보증 이행, 채무 대납 또는 실제 신용손실 이전은 확인되지 않았다.",
+      "explanation": "현재 판정에 쓸 자료를 검증하지 못했습니다.",
       "stress": false,
       "cashflow_impact": false,
-      "event_ids": [
-        "E1"
-      ],
-      "items": [
-        {
-          "label": "NVIDIA 클라우드 서비스 약정",
-          "value": "270억달러",
-          "note": "복수 CSP 대상 총액이며 일부 용량은 축소·해지·재판매 시 감소 가능; CoreWeave 귀속액 미공개",
-          "observed_at": "2026-01-25",
-          "comparison": "조건부 구매약정이지 보증부채는 아님",
-          "source_ids": [
-            "S9"
-          ],
-          "included": true
-        },
-        {
-          "label": "NVIDIA의 CoreWeave 지분투자",
-          "value": "20억달러",
-          "note": "2026-01-26 발표된 보통주 투자; 채무보증이나 실제 손실 이전이 아님",
-          "observed_at": "2026-01-26",
-          "comparison": "자본 연결성 확인",
-          "source_ids": [
-            "S11"
-          ],
-          "included": true
-        },
-        {
-          "label": "Meta의 CoreWeave 계약",
-          "value": "최대 약 210억달러",
-          "note": "2026년 3월 체결된 컴퓨팅 용량 계약; 2032년까지 접근권 포함",
-          "observed_at": "2026-06-30",
-          "comparison": "구매약정이며 지급보증은 아님",
-          "source_ids": [
-            "S3"
-          ],
-          "included": true
-        },
-        {
-          "label": "Core Scientific의 CoreWeave 의존",
-          "value": "상반기 매출 77%",
-          "note": "코로케이션 매출은 단일 고객 CoreWeave에서 발생; 일부 계약은 SPV로 이전됐으나 CoreWeave가 주채무자로 유지",
-          "observed_at": "2026-06-30",
-          "comparison": "차주 충격의 공급자 전염 경로",
-          "source_ids": [
-            "S10"
-          ],
-          "included": true
-        },
-        {
-          "label": "실제 보증 이행·손실 이전",
-          "value": "미확인",
-          "note": "검증한 원문에서 현금 지급이나 신용손실 인식이 확인되지 않음",
-          "observed_at": null,
-          "comparison": "판정 제외",
-          "source_ids": [],
-          "included": false
-        }
-      ]
+      "event_ids": [],
+      "items": []
     }
   ],
-  "sources": [
-    {
-      "id": "S1",
-      "name": "U.S. Treasury Daily Treasury Par Yield Curve Rates",
-      "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve",
-      "published_at": null
-    },
-    {
-      "id": "S2",
-      "name": "CoreWeave Form 8-K — 2033 Convertible Notes",
-      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000432/crwv-20260917.htm",
-      "published_at": "2026-09-22"
-    },
-    {
-      "id": "S3",
-      "name": "CoreWeave Form 10-Q for quarter ended June 30, 2026",
-      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
-      "published_at": null
-    },
-    {
-      "id": "S4",
-      "name": "Microsoft FY2026 Fourth Quarter Earnings Call",
-      "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4",
-      "published_at": "2026-07-29"
-    },
-    {
-      "id": "S5",
-      "name": "Alphabet Second Quarter 2026 Results",
-      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm",
-      "published_at": "2026-07-22"
-    },
-    {
-      "id": "S6",
-      "name": "Meta Second Quarter 2026 Results",
-      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/",
-      "published_at": "2026-07-29"
-    },
-    {
-      "id": "S7",
-      "name": "Amazon Second Quarter 2026 Results",
-      "url": "https://www.aboutamazon.com/news/company-news/amazon-earnings-q2-2026-report",
-      "published_at": "2026-07-30"
-    },
-    {
-      "id": "S8",
-      "name": "Nebius Second Quarter 2026 Financial Results",
-      "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094568/tm2622968d1_ex99-1.htm",
-      "published_at": "2026-08-12"
-    },
-    {
-      "id": "S9",
-      "name": "NVIDIA Fiscal 2026 Form 10-K",
-      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm?pubDate=20260831",
-      "published_at": null
-    },
-    {
-      "id": "S10",
-      "name": "Core Scientific Form 10-Q for quarter ended June 30, 2026",
-      "url": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000014/core-20260630.htm",
-      "published_at": null
-    },
-    {
-      "id": "S11",
-      "name": "NVIDIA and CoreWeave Expanded Collaboration Announcement",
-      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000044/ex991pressrelease_final.htm",
-      "published_at": "2026-01-26"
-    }
-  ],
-  "credit_events": {
-    "critical_confirmed": false,
-    "systemic_confirmed": false,
-    "affected_entities": [],
-    "source_ids": [],
-    "description": "중대한 실제 차환·지급 문제나 복수 관련 주체로의 신용손실 전염은 확인되지 않았다."
+  "contagion": "현재 확인 제한",
+  "last_available_report": {
+    "date": "2026-10-11",
+    "risk_level": "YELLOW",
+    "assessment_state": "provisional"
   },
-  "schema_version": 2,
-  "ui_version": "2.0.0",
-  "rules_version": "1.0",
-  "risk_level": "YELLOW",
-  "risk_score": null,
-  "watch": "",
-  "rule_code": "Y1",
-  "assessment_state": "provisional",
-  "generated_at": "2026-10-11T10:51:14+09:00",
-  "research_model": "gpt-5.6",
-  "api_response_id": "resp_0162a8530dbf2147016acaeb50bcd887d1be4695956082bb52",
-  "source_verification": "urls_observed_in_tools; claim interpretation remains qualitative",
   "trend": {
     "same_rules_count": 8,
     "days_30": {
@@ -475,11 +125,11 @@
       "last_date": "2026-10-11"
     }
   },
-  "current_level_streak_days": 1,
-  "history_count": 15,
-  "rendered_at": "2026-10-11T10:51:14+09:00",
+  "current_level_streak_days": 0,
+  "history_count": 16,
+  "rendered_at": "2026-10-12T11:22:50+09:00",
   "html_url": "./latest.html",
-  "build_sha": "69c2ce9d1636cf6a37e440b59bf15c8822bcaab4",
+  "build_sha": "11fa780f1c33c0ec6f6099313ce5a18f3b7c96be",
   "monthly_summary": {
     "current_month": "2026-10",
     "available": true,
