@@ -1,0 +1,608 @@
+{
+  "date": "2026-10-18",
+  "headline": "수주·예산은 견조, 증설·수익성은 점검",
+  "reason": "주가 급락과 달리 수주·예산 기반은 유지되나 생산확대와 자금비용 부담이 남았다.",
+  "next_check": "10월 말 3분기 실적에서 납기·마진·현금흐름과 추정치 변화를 확인한다.",
+  "investor_view": "가격은 고점 대비 크게 조정됐지만 이를 사업위험 상승이나 저평가로 단정할 수 없다. 수주잔고의 매출 전환, 증설 집행, 영업현금흐름과 2026년 이익추정 유지 여부를 함께 확인해야 한다.",
+  "industry_axes": [
+    {
+      "id": "orders",
+      "status": "GREEN",
+      "coverage": "sufficient",
+      "change": "unavailable",
+      "meaning": "양사 수주잔고가 장기 매출 기반을 제공하고 한화의 유럽 신규계약도 확인됐다.",
+      "stress": false,
+      "event_ids": [
+        "E2",
+        "E4",
+        "E6",
+        "E7"
+      ],
+      "items": [
+        {
+          "label": "한화 지상방산 수주잔고",
+          "value": "38.3조원",
+          "observed_at": "2026-06-30",
+          "note": "2분기 말 기준이며 계획된 해외 납품이 진행 중이다.",
+          "source_ids": [
+            "S4",
+            "S5"
+          ],
+          "included": true
+        },
+        {
+          "label": "LIG 연결 수주잔고",
+          "value": "24.57조원",
+          "observed_at": "2026-06-30",
+          "note": "2025년 말 26.23조원보다 감소했으나 여전히 장기 일감을 확보했다.",
+          "source_ids": [
+            "S9"
+          ],
+          "included": true
+        },
+        {
+          "label": "스페인 K9 실행계약",
+          "value": null,
+          "observed_at": "2026-08-28",
+          "note": "INDRA와 실행계약이 확인됐으나 금액과 종료일은 공시 유보됐다.",
+          "source_ids": [
+            "S7"
+          ],
+          "included": true
+        },
+        {
+          "label": "크로아티아 천무 계약",
+          "value": "6,411억원",
+          "observed_at": "2026-09-10",
+          "note": "계약기간은 2030년 9월 9일까지다.",
+          "source_ids": [
+            "S8"
+          ],
+          "included": true
+        }
+      ]
+    },
+    {
+      "id": "budget",
+      "status": "GREEN",
+      "coverage": "sufficient",
+      "change": "unavailable",
+      "meaning": "한국 방위력개선비와 NATO 국방지출 확대 방향이 중장기 수요를 지지한다.",
+      "stress": false,
+      "event_ids": [
+        "E1"
+      ],
+      "items": [
+        {
+          "label": "2027년 한국 국방예산 정부안",
+          "value": "73조2,777억원",
+          "observed_at": "2026-09-03",
+          "note": "정부안 단계로 국회 심의 과정에서 변경될 수 있다.",
+          "source_ids": [
+            "S1"
+          ],
+          "included": true
+        },
+        {
+          "label": "2027년 방위력개선비 정부안",
+          "value": "22조7,112억원, 전년 대비 +13.8%",
+          "observed_at": "2026-09-03",
+          "note": "무기 획득·양산·연구개발 예산의 증가 방향이 확인됐다.",
+          "source_ids": [
+            "S1"
+          ],
+          "included": true
+        },
+        {
+          "label": "NATO 국방투자 목표",
+          "value": "2035년 GDP 5%",
+          "observed_at": "2026-06-29",
+          "note": "최소 3.5%는 핵심 국방소요에 배정하는 장기 목표다.",
+          "source_ids": [
+            "S2"
+          ],
+          "included": true
+        },
+        {
+          "label": "수출승인·통제 중대 악화",
+          "value": null,
+          "observed_at": "2026-10-18",
+          "note": "최근 180일 내 양사에 직접 적용된 중대한 신규 통제는 확인하지 못했다.",
+          "source_ids": [],
+          "included": false
+        }
+      ]
+    },
+    {
+      "id": "execution",
+      "status": "YELLOW",
+      "coverage": "partial",
+      "change": "unavailable",
+      "meaning": "납품은 진행 중이나 대규모 증설과 공급망 안정화의 실제 성과를 확인해야 한다.",
+      "stress": true,
+      "event_ids": [
+        "E2",
+        "E3",
+        "E5",
+        "E8"
+      ],
+      "items": [
+        {
+          "label": "한화 해외 납품 진행",
+          "value": "폴란드·이집트·중동 계획 납품 진행",
+          "observed_at": "2026-06-30",
+          "note": "회사는 2분기 실적에서 계획된 일정이 순조롭다고 밝혔다.",
+          "source_ids": [
+            "S4"
+          ],
+          "included": true
+        },
+        {
+          "label": "LIG 생산시설 투자재원",
+          "value": "정정 후 5,320억원 우선주 증자",
+          "observed_at": "2026-09-04",
+          "note": "구미·김천 유도무기 생산시설 확대 목적이며 집행·가동률 확인이 필요하다.",
+          "source_ids": [
+            "S10",
+            "S11"
+          ],
+          "included": true
+        },
+        {
+          "label": "방산 공급망 안정화 지원",
+          "value": "제2차 선도사업자·지원과제 모집",
+          "observed_at": "2026-10-13",
+          "note": "정부 지원은 긍정적이나 핵심품목 공급망 취약성이 정책 과제로 남아 있다.",
+          "source_ids": [
+            "S3"
+          ],
+          "included": true
+        },
+        {
+          "label": "중대 생산사고·품질 리콜",
+          "value": null,
+          "observed_at": "2026-10-18",
+          "note": "최근 공개자료에서 양사 실적을 훼손할 중대 사건을 확인하지 못했다.",
+          "source_ids": [],
+          "included": false
+        }
+      ]
+    },
+    {
+      "id": "profitability",
+      "status": "YELLOW",
+      "coverage": "partial",
+      "change": "unavailable",
+      "meaning": "수출 매출과 이익은 증가했지만 계약믹스·자회사 손실·금융비용 변동성이 있다.",
+      "stress": true,
+      "event_ids": [
+        "E2",
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "items": [
+        {
+          "label": "한화 2분기 영업이익",
+          "value": "1조3,655억원, 전년 대비 +58.5%",
+          "observed_at": "2026-06-30",
+          "note": "연결 자회사 기여가 포함돼 지상방산 단독 수익성과 구분해야 한다.",
+          "source_ids": [
+            "S4",
+            "S5"
+          ],
+          "included": true
+        },
+        {
+          "label": "한화 지상방산 영업이익",
+          "value": "5,330억원",
+          "observed_at": "2026-06-30",
+          "note": "매출 2조1,075억원으로 높은 수익성을 기록했으나 지속성 확인이 필요하다.",
+          "source_ids": [
+            "S4"
+          ],
+          "included": true
+        },
+        {
+          "label": "LIG 2분기 영업이익",
+          "value": "1,057억원, 영업이익률 9.5%",
+          "observed_at": "2026-06-30",
+          "note": "수출비중 상승으로 전년 대비 개선됐다.",
+          "source_ids": [
+            "S9"
+          ],
+          "included": true
+        },
+        {
+          "label": "LIG 순이익·금융비용",
+          "value": "순이익 782억원, 전년 대비 -24.5%",
+          "observed_at": "2026-06-30",
+          "note": "금융비용 증가와 자회사 손실이 영업이익 개선을 일부 상쇄했다.",
+          "source_ids": [
+            "S9"
+          ],
+          "included": true
+        }
+      ]
+    }
+  ],
+  "holdings": [
+    {
+      "id": "hanwha_aerospace",
+      "name": "한화에어로스페이스",
+      "status": "YELLOW",
+      "change": "unavailable",
+      "reason": "방산 수주·실적은 견조하지만 비방산 계약 해지와 대규모 납품 실행을 점검해야 한다.",
+      "event_ids": [
+        "E2",
+        "E3",
+        "E6",
+        "E7"
+      ],
+      "items": [
+        {
+          "label": "2분기 연결 실적",
+          "value": "매출 9조2,929억원·영업이익 1조3,655억원",
+          "observed_at": "2026-06-30",
+          "note": "전년 동기 대비 각각 47.2%, 58.5% 증가했다.",
+          "source_ids": [
+            "S4",
+            "S5"
+          ],
+          "included": true
+        },
+        {
+          "label": "지상방산 수주잔고",
+          "value": "38.3조원",
+          "observed_at": "2026-06-30",
+          "note": "장기 매출 가시성은 높지만 납기와 계약별 마진 확인이 필요하다.",
+          "source_ids": [
+            "S4"
+          ],
+          "included": true
+        },
+        {
+          "label": "eVTOL 부품계약 해지",
+          "value": "4,548억원",
+          "observed_at": "2026-08-03",
+          "note": "시장환경과 사업방향 변화에 따른 합의 해지로 방산계약 취소와는 구분한다.",
+          "source_ids": [
+            "S6"
+          ],
+          "included": true
+        },
+        {
+          "label": "스페인 K9 실행계약",
+          "value": null,
+          "observed_at": "2026-08-28",
+          "note": "계약 체결은 확인됐으나 금액·기간은 유보돼 경제성 판단이 제한된다.",
+          "source_ids": [
+            "S7"
+          ],
+          "included": true
+        },
+        {
+          "label": "크로아티아 천무 계약",
+          "value": "6,411억원",
+          "observed_at": "2026-09-10",
+          "note": "2025년 매출의 2.4% 규모로 공시됐다.",
+          "source_ids": [
+            "S8"
+          ],
+          "included": true
+        },
+        {
+          "label": "중대 법률·안전사고",
+          "value": null,
+          "observed_at": "2026-10-18",
+          "note": "최근 180일 내 재무에 중대한 공개사건을 확인하지 못했다.",
+          "source_ids": [],
+          "included": false
+        }
+      ]
+    },
+    {
+      "id": "lig_nex1",
+      "name": "LIG디펜스앤에어로스페이스",
+      "status": "YELLOW",
+      "change": "unavailable",
+      "reason": "수출 성장과 이익 개선에도 잔고 감소, 자회사 손실, 증설자금 부담을 확인해야 한다.",
+      "event_ids": [
+        "E4",
+        "E5"
+      ],
+      "items": [
+        {
+          "label": "2분기 연결 실적",
+          "value": "매출 1조1,101억원·영업이익 1,057억원",
+          "observed_at": "2026-06-30",
+          "note": "전년 동기 대비 각각 17.4%, 29.5% 증가했다.",
+          "source_ids": [
+            "S9"
+          ],
+          "included": true
+        },
+        {
+          "label": "수출 매출 비중",
+          "value": "25.4%",
+          "observed_at": "2026-06-30",
+          "note": "전년 동기 17.4%에서 상승했다.",
+          "source_ids": [
+            "S9"
+          ],
+          "included": true
+        },
+        {
+          "label": "수주잔고",
+          "value": "24.57조원",
+          "observed_at": "2026-06-30",
+          "note": "2025년 말 26.23조원에서 감소해 신규수주 보충 여부를 점검해야 한다.",
+          "source_ids": [
+            "S9"
+          ],
+          "included": true
+        },
+        {
+          "label": "우선주 유상증자",
+          "value": "5,320억원",
+          "observed_at": "2026-09-04",
+          "note": "무의결권 비상장 우선주 방식이나 배당·상환조건과 자본비용 확인이 필요하다.",
+          "source_ids": [
+            "S10",
+            "S11"
+          ],
+          "included": true
+        },
+        {
+          "label": "Ghost Robotics 손실",
+          "value": "분기 영업손실 약 122억원",
+          "observed_at": "2026-06-30",
+          "note": "신사업 투자 손실이 연결 수익성과 현금흐름에 부담이다.",
+          "source_ids": [
+            "S9"
+          ],
+          "included": true
+        },
+        {
+          "label": "최근 해외 대형 본계약",
+          "value": null,
+          "observed_at": "2026-10-18",
+          "note": "최근 180일 내 금액이 공개된 신규 해외 대형 본계약을 확인하지 못했다.",
+          "source_ids": [],
+          "included": false
+        }
+      ]
+    }
+  ],
+  "price": {
+    "as_of": "2026-10-16",
+    "hanwha_close": 888000,
+    "hanwha_high_52w": 1655000,
+    "hanwha_drawdown_pct": -46.34,
+    "lig_close": 574000,
+    "lig_high_52w": 1118000,
+    "lig_drawdown_pct": -48.66,
+    "defense_etf_close": 28470,
+    "kospi_close": 5668.05,
+    "hanwha_eps_2026": 32006,
+    "hanwha_per_2026": 27.74,
+    "lig_eps_2026": 13759,
+    "lig_per_2026": 41.72,
+    "interpretation": "양사는 52주 고점 대비 약 46~49% 하락해 가격 조정이 깊다. 그러나 2026E PER는 각각 약 27.7배와 41.7배로, 하락만으로 저평가 또는 매수신호를 뜻하지 않는다. 3분기 실적 이후 EPS 추정치가 유지되는지 확인해야 한다.",
+    "source_ids": [
+      "S12",
+      "S13",
+      "S14",
+      "S15"
+    ]
+  },
+  "events": [
+    {
+      "id": "E1",
+      "date": "2026-09-03",
+      "target": "industry",
+      "direction": "positive",
+      "title": "2027년 국방예산 정부안 확대",
+      "summary": "총 73조2,777억원, 방위력개선비 22조7,112억원으로 편성됐다.",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "E2",
+      "date": "2026-07-31",
+      "target": "hanwha_aerospace",
+      "direction": "positive",
+      "title": "2분기 최대 실적과 수주잔고 확인",
+      "summary": "연결 영업이익 1조3,655억원, 지상방산 잔고 38.3조원을 발표했다.",
+      "source_ids": [
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "id": "E3",
+      "date": "2026-08-03",
+      "target": "hanwha_aerospace",
+      "direction": "negative",
+      "title": "영국 eVTOL 부품계약 해지",
+      "summary": "사업환경 변화로 4,548억원 규모 비방산 부품계약을 합의 종료했다.",
+      "source_ids": [
+        "S6"
+      ]
+    },
+    {
+      "id": "E4",
+      "date": "2026-08-06",
+      "target": "lig_nex1",
+      "direction": "mixed",
+      "title": "2분기 이익 개선·잔고 감소",
+      "summary": "영업이익은 증가했으나 수주잔고는 2025년 말 대비 감소했다.",
+      "source_ids": [
+        "S9"
+      ]
+    },
+    {
+      "id": "E5",
+      "date": "2026-09-04",
+      "target": "lig_nex1",
+      "direction": "mixed",
+      "title": "우선주 증자 규모 5,320억원 확정",
+      "summary": "생산시설 증설재원을 확보했으나 자본비용과 투자회수 검증이 필요하다.",
+      "source_ids": [
+        "S10",
+        "S11"
+      ]
+    },
+    {
+      "id": "E6",
+      "date": "2026-08-31",
+      "target": "hanwha_aerospace",
+      "direction": "positive",
+      "title": "스페인 K9 실행계약 공시",
+      "summary": "INDRA와 계약을 체결했으나 금액과 종료일은 비밀유지로 유보됐다.",
+      "source_ids": [
+        "S7"
+      ]
+    },
+    {
+      "id": "E7",
+      "date": "2026-09-11",
+      "target": "hanwha_aerospace",
+      "direction": "positive",
+      "title": "크로아티아 천무 6,411억원 계약",
+      "summary": "유럽 수출지역을 확대하는 4년 공급계약이 확정됐다.",
+      "source_ids": [
+        "S8"
+      ]
+    },
+    {
+      "id": "E8",
+      "date": "2026-10-13",
+      "target": "industry",
+      "direction": "mixed",
+      "title": "방산 공급망 안정화 사업 재공고",
+      "summary": "정부 지원은 확대됐으나 핵심품목 조달 안정성이 계속 정책 과제로 관리된다.",
+      "source_ids": [
+        "S3"
+      ]
+    },
+    {
+      "id": "E9",
+      "date": "2026-10-16",
+      "target": "market",
+      "direction": "mixed",
+      "title": "급락 후 KOSPI·방산주 반등",
+      "summary": "KOSPI는 2.05% 반등했지만 양사 주가는 여전히 52주 고점 대비 큰 낙폭이다.",
+      "source_ids": [
+        "S12",
+        "S13",
+        "S15"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "name": "대한민국 정책브리핑·대통령실, 2027년 국방예산 정부안",
+      "url": "https://m.korea.kr/briefing/pressReleaseView.do?gubun=pressRelease&newsId=156779975&pageIndex=1&repCode=A00005",
+      "published_at": "2026-09-03"
+    },
+    {
+      "id": "S2",
+      "name": "NATO, Defence investment and NATO's 5% commitment",
+      "url": "https://www.nato.int/en/what-we-do/introduction-to-nato/defence-expenditures-and-natos-5-commitment?selectedLocale=fr",
+      "published_at": "2026-06-29"
+    },
+    {
+      "id": "S3",
+      "name": "방위사업청, 공급망 안정화 선도사업자 제2차 선정 공고",
+      "url": "https://dapa.go.kr/dapa/main.do",
+      "published_at": "2026-10-13"
+    },
+    {
+      "id": "S4",
+      "name": "한화그룹, 한화에어로스페이스 2026년 2분기 실적",
+      "url": "https://www.hanwha.co.kr/newsroom/media_center/news/news_view.do?seq=16046",
+      "published_at": "2026-07-31"
+    },
+    {
+      "id": "S5",
+      "name": "한국거래소 KIND, 한화에어로스페이스 2Q 2026 Earnings Release",
+      "url": "https://kind.krx.co.kr/corpgeneral/irschedule.do?irSeq=45141&method=searchIRScheduleDetail",
+      "published_at": "2026-07-31"
+    },
+    {
+      "id": "S6",
+      "name": "뉴스핌, 한화에어로 eVTOL 부품계약 해지",
+      "url": "https://m.newspim.com/news/view/20260803001169",
+      "published_at": "2026-08-03"
+    },
+    {
+      "id": "S7",
+      "name": "수주안테나, 한화에어로스페이스 스페인 K9 계약 공시 분석",
+      "url": "https://sujuradar.com/disclosure/20260831800137/00126566",
+      "published_at": "2026-08-31"
+    },
+    {
+      "id": "S8",
+      "name": "미래AI, 한화에어로스페이스 크로아티아 천무 계약 공시",
+      "url": "https://www.meerae.ai/insights/20260911800004/",
+      "published_at": "2026-09-11"
+    },
+    {
+      "id": "S9",
+      "name": "LIG Defense&Aerospace, FY26 2Q Interim Performance",
+      "url": "https://www.ligdefenseaerospace.com/eng/ir/allReportView.do?bbs_no=7439",
+      "published_at": "2026-08-06"
+    },
+    {
+      "id": "S10",
+      "name": "금융위원회, 국민성장펀드 LIG 생산시설 투자 승인",
+      "url": "https://www.fsc.go.kr/no010101/87193?curPage=3&srchBeginDt=&srchCtgry=&srchEndDt=&srchKey=&srchText=",
+      "published_at": "2026-06-26"
+    },
+    {
+      "id": "S11",
+      "name": "쉬운공시, LIG 유상증자 정정 공시",
+      "url": "https://www.easygongsi.com/disclosures/20260904000208",
+      "published_at": "2026-09-04"
+    },
+    {
+      "id": "S12",
+      "name": "한국경제 코리아마켓, 한화에어로스페이스 주가·컨센서스",
+      "url": "https://markets.hankyung.com/stock/012450/consensus",
+      "published_at": null
+    },
+    {
+      "id": "S13",
+      "name": "한국경제 코리아마켓, LIG디펜스앤에어로스페이스 주가·컨센서스",
+      "url": "https://markets.hankyung.com/stock/079550/consensus",
+      "published_at": null
+    },
+    {
+      "id": "S14",
+      "name": "QuantyLab, TIGER K방산&우주 시장데이터",
+      "url": "https://quantylab.com/ai/etf-analysis/463250/20261007/?tab=analysis",
+      "published_at": null
+    },
+    {
+      "id": "S15",
+      "name": "한국경제 코리아마켓, 2026년 10월 16일 시장종합",
+      "url": "https://markets.hankyung.com/",
+      "published_at": null
+    }
+  ],
+  "data_gaps": [
+    "한국거래소 원시 시세 API를 직접 열람하지 못해 종가는 KRX 장마감 표기 시장데이터로 교차 확인했다.",
+    "한화 스페인 K9 계약은 비밀유지로 계약금액·종료일·예상마진이 공개되지 않았다.",
+    "양사의 2026년 3분기 실적은 기준일 현재 미발표 상태다.",
+    "한화 2026E EPS는 2026년 10월 15일 컨센서스, LIG는 10월 16일 컨센서스 기준이다.",
+    "TIGER K방산&우주 종가는 거래소 원문이 아닌 검증 가능한 보조 시장데이터를 사용했다.",
+    "최근 180일의 양사 수출승인 진행상황과 계약별 원가·환헤지 조건은 공개자료만으로 확인이 제한된다."
+  ],
+  "generated_at": "2026-10-18T10:18:25+09:00",
+  "api_response_id": "resp_0a949f9df667a03d016ad41de0a2d087d1b8fcfb1153a03d86",
+  "industry_risk": "YELLOW",
+  "price_regime": "깊은 조정"
+}
