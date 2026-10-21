@@ -1,0 +1,583 @@
+{
+  "date": "2026-10-21",
+  "headline": "사업은 견조하나 주가는 급격한 조정 국면",
+  "reason": "예산·수주잔고는 양호하나 증산 실행과 계약믹스·환율은 점검 필요",
+  "next_check": "양사 3분기 실적과 납품일정·원가·운전자본 변화를 확인",
+  "investor_view": "주가 낙폭은 사업위험 상승과 구분해야 한다. 수주잔고의 매출 전환, 마진과 현금흐름이 유지되는지가 확인될 때 조정의 의미를 재평가할 수 있다.",
+  "industry_axes": [
+    {
+      "id": "orders",
+      "status": "GREEN",
+      "coverage": "sufficient",
+      "change": "unavailable",
+      "meaning": "NATO 방공·장거리화력 수요와 양사 대규모 수주잔고가 중기 매출 기반을 지지한다.",
+      "stress": false,
+      "event_ids": [
+        "E1",
+        "E3",
+        "E5",
+        "E7"
+      ],
+      "items": [
+        {
+          "label": "한화 지상방산 수주잔고",
+          "value": "38.3조원",
+          "observed_at": "2026-06-30",
+          "note": "2분기 말 기준. 전년 말 대비 증가했으나 1분기 39.7조원보다는 감소했다.",
+          "source_ids": [
+            "S5",
+            "S6"
+          ],
+          "included": true
+        },
+        {
+          "label": "LIG 수주잔고",
+          "value": "정확한 2분기 말 수치 원문 추출 제한",
+          "observed_at": "2026-06-30",
+          "note": "2025년 말 26.2조원 이후 최신 IR 첨부파일은 확인했으나 본문 수치 직접 추출이 제한됐다.",
+          "source_ids": [
+            "S8",
+            "S9"
+          ],
+          "included": false
+        },
+        {
+          "label": "NATO 방산수요",
+          "value": "2035년 GDP 5% 국방·안보 투자 약속",
+          "observed_at": "2026-06-29",
+          "note": "핵심 국방 3.5%와 안보 관련 투자 최대 1.5%로 구성된다.",
+          "source_ids": [
+            "S2",
+            "S3"
+          ],
+          "included": true
+        }
+      ]
+    },
+    {
+      "id": "budget",
+      "status": "GREEN",
+      "coverage": "sufficient",
+      "change": "unavailable",
+      "meaning": "한국 방위력개선비와 NATO 국방지출 확대 방향이 조달 수요에 우호적이다.",
+      "stress": false,
+      "event_ids": [
+        "E1"
+      ],
+      "items": [
+        {
+          "label": "2027년 한국 국방예산 정부안",
+          "value": "73조2777억원, 전년 대비 +8.2%",
+          "observed_at": "2026-09-03",
+          "note": "국회 심의 전 정부안이다.",
+          "source_ids": [
+            "S1"
+          ],
+          "included": true
+        },
+        {
+          "label": "2027년 방위력개선비 정부안",
+          "value": "22조7112억원, 전년 대비 +13.8%",
+          "observed_at": "2026-09-03",
+          "note": "역대 최대폭인 약 2.8조원 증액안이다.",
+          "source_ids": [
+            "S1"
+          ],
+          "included": true
+        },
+        {
+          "label": "수출승인·통제 악화",
+          "value": null,
+          "observed_at": "2026-10-21",
+          "note": "최근 180일 내 양사 핵심 수출계약을 훼손한 확정적 승인 취소는 확인되지 않았다.",
+          "source_ids": [],
+          "included": false
+        }
+      ]
+    },
+    {
+      "id": "execution",
+      "status": "YELLOW",
+      "coverage": "partial",
+      "change": "unavailable",
+      "meaning": "납품은 진행 중이나 대규모 잔고 소화를 위한 현지화·증설 실행 부담이 커지고 있다.",
+      "stress": true,
+      "event_ids": [
+        "E4",
+        "E5",
+        "E7"
+      ],
+      "items": [
+        {
+          "label": "한화 해외 납품",
+          "value": "폴란드·이집트·중동 물량이 계획대로 2분기 실적 반영",
+          "observed_at": "2026-06-30",
+          "note": "회사는 주요 수출 납품 일정이 순조롭게 진행됐다고 밝혔다.",
+          "source_ids": [
+            "S5"
+          ],
+          "included": true
+        },
+        {
+          "label": "한화 미국 생산기반",
+          "value": "앨라배마 공장 임차·아칸소 탄약거점 추진",
+          "observed_at": "2026-09-22",
+          "note": "현지화는 기회지만 초기 투자·인증·램프업 실행을 점검해야 한다.",
+          "source_ids": [
+            "S4",
+            "S7"
+          ],
+          "included": true
+        },
+        {
+          "label": "LIG 공급망 지원",
+          "value": "협력사 금융지원 약 2000억원",
+          "observed_at": "2026-06-09",
+          "note": "증산 과정의 협력사 자금 부담을 완화하기 위한 조치다.",
+          "source_ids": [
+            "S10"
+          ],
+          "included": true
+        },
+        {
+          "label": "중대 사고·품질 결함",
+          "value": null,
+          "observed_at": "2026-10-21",
+          "note": "최근 180일 내 양사 전사 위험을 높일 확정적 중대 사고·리콜은 확인되지 않았다.",
+          "source_ids": [],
+          "included": false
+        }
+      ]
+    },
+    {
+      "id": "profitability",
+      "status": "YELLOW",
+      "coverage": "partial",
+      "change": "unavailable",
+      "meaning": "수출믹스가 마진을 지지하지만 원화 강세·개발매출·현지화 비용의 변동성이 남아 있다.",
+      "stress": true,
+      "event_ids": [
+        "E2",
+        "E6",
+        "E9"
+      ],
+      "items": [
+        {
+          "label": "한화 2분기 연결 영업이익",
+          "value": "1조3655억원, 전년 대비 +59%",
+          "observed_at": "2026-06-30",
+          "note": "지상방산 영업이익은 5330억원, 항공우주는 흑자 전환했다.",
+          "source_ids": [
+            "S5"
+          ],
+          "included": true
+        },
+        {
+          "label": "한화 지상방산 영업이익률",
+          "value": "25.3%",
+          "observed_at": "2026-06-30",
+          "note": "2분기 기준으로 높았으나 분기별 납품·계약믹스에 따라 변동 가능하다.",
+          "source_ids": [
+            "S5"
+          ],
+          "included": true
+        },
+        {
+          "label": "LIG 2분기 연결 실적",
+          "value": "매출 1조1101억원·영업이익 1057억원",
+          "observed_at": "2026-06-30",
+          "note": "전년 동기 대비 성장했으나 1분기 대비 영업이익은 감소했다.",
+          "source_ids": [
+            "S8",
+            "S9"
+          ],
+          "included": true
+        },
+        {
+          "label": "산업 전체 현금흐름·마진",
+          "value": null,
+          "observed_at": "2026-10-21",
+          "note": "2026년 산업 전체를 대표하는 최신 공인 통계가 없어 회사 실적을 산업 전체로 확대하지 않았다.",
+          "source_ids": [
+            "S11"
+          ],
+          "included": false
+        }
+      ]
+    }
+  ],
+  "holdings": [
+    {
+      "id": "hanwha_aerospace",
+      "name": "한화에어로스페이스",
+      "status": "YELLOW",
+      "change": "unavailable",
+      "reason": "수주·납품·2분기 이익은 견조하나 현지투자와 분기 믹스 변동을 점검해야 한다.",
+      "event_ids": [
+        "E2",
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "items": [
+        {
+          "label": "2분기 연결 실적",
+          "value": "매출 9조2929억원·영업이익 1조3655억원",
+          "observed_at": "2026-06-30",
+          "note": "전년 동기 대비 각각 47%, 59% 증가했다.",
+          "source_ids": [
+            "S5"
+          ],
+          "included": true
+        },
+        {
+          "label": "지상방산 수주잔고",
+          "value": "38.3조원",
+          "observed_at": "2026-06-30",
+          "note": "장기 매출 기반은 양호하지만 납품 시점과 계약믹스가 분기 실적을 좌우한다.",
+          "source_ids": [
+            "S5",
+            "S6"
+          ],
+          "included": true
+        },
+        {
+          "label": "미 육군 K9MH 시제품",
+          "value": "6문 공급 계약",
+          "observed_at": "2026-08-19",
+          "note": "미국 시장 진입의 초기 계약으로 후속 양산 수주 여부는 미확정이다.",
+          "source_ids": [
+            "S4"
+          ],
+          "included": true
+        },
+        {
+          "label": "현지 생산 투자",
+          "value": "미국 생산기반 확대 진행",
+          "observed_at": "2026-09-22",
+          "note": "시장 접근성은 개선되나 투자비·가동률·인증 일정은 향후 확인 대상이다.",
+          "source_ids": [
+            "S4",
+            "S7"
+          ],
+          "included": true
+        },
+        {
+          "label": "중대 법률·품질 사건",
+          "value": null,
+          "observed_at": "2026-10-21",
+          "note": "최근 180일 내 사업가치를 훼손할 확정 사건은 확인되지 않았다.",
+          "source_ids": [],
+          "included": false
+        }
+      ]
+    },
+    {
+      "id": "lig_nex1",
+      "name": "LIG디펜스앤에어로스페이스(구 LIG넥스원)",
+      "status": "YELLOW",
+      "change": "unavailable",
+      "reason": "수출 성장과 유럽·미국 확장은 긍정적이나 증산·마진·준법체계 실행을 확인해야 한다.",
+      "event_ids": [
+        "E6",
+        "E7",
+        "E8"
+      ],
+      "items": [
+        {
+          "label": "2분기 연결 실적",
+          "value": "매출 1조1101억원·영업이익 1057억원",
+          "observed_at": "2026-06-30",
+          "note": "전년 동기 대비 성장했지만 직전 분기 대비 이익은 감소했다.",
+          "source_ids": [
+            "S8",
+            "S9"
+          ],
+          "included": true
+        },
+        {
+          "label": "유럽 방공 협력",
+          "value": "라인메탈과 유럽 합작법인 설립 논의",
+          "observed_at": "2026-06-16",
+          "note": "다층방공 현지화 기회이나 아직 본계약·수주가 아닌 협력 단계다.",
+          "source_ids": [
+            "S10"
+          ],
+          "included": true
+        },
+        {
+          "label": "루마니아 신궁 사업",
+          "value": "2026년 5월 사업 완료 예정 공개",
+          "observed_at": "2026-05-14",
+          "note": "후속 조달과 현지 거점 확대 여부가 다음 수주 확인 포인트다.",
+          "source_ids": [
+            "S10"
+          ],
+          "included": true
+        },
+        {
+          "label": "준법 조직개편",
+          "value": "준법경영 강화 조직개편 발표",
+          "observed_at": "2026-10-19",
+          "note": "강화 조치는 확인됐으나 특정 위반·제재의 발생 여부는 원문에서 확인되지 않았다.",
+          "source_ids": [
+            "S10"
+          ],
+          "included": true
+        },
+        {
+          "label": "최신 수주잔고·현금흐름",
+          "value": null,
+          "observed_at": "2026-10-21",
+          "note": "2분기 IR 첨부파일 본문 수치 직접 추출이 제한돼 보수적으로 제외했다.",
+          "source_ids": [
+            "S8"
+          ],
+          "included": false
+        }
+      ]
+    }
+  ],
+  "price": {
+    "as_of": "2026-10-20",
+    "hanwha_close": 799000,
+    "hanwha_high_52w": 1655000,
+    "hanwha_drawdown_pct": -51.72,
+    "lig_close": 548000,
+    "lig_high_52w": 1118000,
+    "lig_drawdown_pct": -50.98,
+    "defense_etf_close": 26810,
+    "kospi_close": 5552.74,
+    "hanwha_eps_2026": 32006,
+    "hanwha_per_2026": 24.96,
+    "lig_eps_2026": 13759,
+    "lig_per_2026": 39.83,
+    "interpretation": "10월 21일 장중 자료가 혼재해 마지막 완결 거래일인 10월 20일로 통일했다. 양사와 방산 ETF가 약세였고 KOSPI도 하락해 시장·섹터 조정 성격이 함께 존재한다. 약 51% 낙폭만으로 사업위험 상승이나 저평가를 확정할 수 없으며 2026E EPS 훼손 여부는 3분기 실적 이후 재확인해야 한다.",
+    "source_ids": [
+      "S12",
+      "S13",
+      "S14",
+      "S15",
+      "S16",
+      "S17"
+    ]
+  },
+  "events": [
+    {
+      "id": "E1",
+      "date": "2026-09-03",
+      "target": "industry",
+      "direction": "positive",
+      "title": "2027년 국방예산 정부안 8.2% 증액",
+      "summary": "정부안은 총 73조2777억원이며 방위력개선비는 13.8% 증액됐다. 국회 심의 전 수치다.",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "E2",
+      "date": "2026-04-30",
+      "target": "hanwha_aerospace",
+      "direction": "mixed",
+      "title": "한화 1분기 성장 속 지상방산 이익 감소",
+      "summary": "연결 영업이익은 증가했으나 지상방산 영업이익은 전년 대비 31% 감소해 믹스 변동성을 보였다.",
+      "source_ids": [
+        "S6"
+      ]
+    },
+    {
+      "id": "E3",
+      "date": "2026-07-31",
+      "target": "hanwha_aerospace",
+      "direction": "positive",
+      "title": "한화 2분기 영업이익 첫 1조원 돌파",
+      "summary": "연결 영업이익 1조3655억원과 지상방산 수주잔고 38.3조원을 기록했다.",
+      "source_ids": [
+        "S5"
+      ]
+    },
+    {
+      "id": "E4",
+      "date": "2026-08-19",
+      "target": "hanwha_aerospace",
+      "direction": "positive",
+      "title": "미 육군 K9MH 시제품 6문 계약",
+      "summary": "미국 시장 최초 진입 성과이나 시제품 단계로 후속 양산 수주는 아직 확정되지 않았다.",
+      "source_ids": [
+        "S4"
+      ]
+    },
+    {
+      "id": "E5",
+      "date": "2026-09-22",
+      "target": "hanwha_aerospace",
+      "direction": "mixed",
+      "title": "미국 탄약 생산거점 구축 추진",
+      "summary": "현지 생산기반은 수주 접근성을 높이지만 투자비와 램프업 실행 부담도 동반한다.",
+      "source_ids": [
+        "S7"
+      ]
+    },
+    {
+      "id": "E6",
+      "date": "2026-08-06",
+      "target": "lig_nex1",
+      "direction": "mixed",
+      "title": "LIG 2분기 전년 대비 성장·전분기 둔화",
+      "summary": "영업이익은 전년 동기 대비 늘었으나 1분기보다 감소해 수출 인식과 믹스 확인이 필요하다.",
+      "source_ids": [
+        "S8",
+        "S9"
+      ]
+    },
+    {
+      "id": "E7",
+      "date": "2026-06-16",
+      "target": "lig_nex1",
+      "direction": "positive",
+      "title": "라인메탈과 유럽 다층방공 협력",
+      "summary": "유럽 합작법인과 현지 개발·생산을 논의했으나 본계약이나 확정 수주는 아니다.",
+      "source_ids": [
+        "S10"
+      ]
+    },
+    {
+      "id": "E8",
+      "date": "2026-10-19",
+      "target": "lig_nex1",
+      "direction": "mixed",
+      "title": "준법경영 강화 조직개편",
+      "summary": "통제체계 강화는 긍정적이나 개편 배경과 비용·영업 영향은 추가 공시 확인이 필요하다.",
+      "source_ids": [
+        "S10"
+      ]
+    },
+    {
+      "id": "E9",
+      "date": "2026-10-20",
+      "target": "market",
+      "direction": "negative",
+      "title": "방산주·ETF 동반 급락",
+      "summary": "TIGER K방산&우주는 9.88%, KOSPI는 3.73% 하락했다. 사업위험과 시장조정을 분리해야 한다.",
+      "source_ids": [
+        "S12",
+        "S15"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "name": "방위사업청 2027년 국방예산 정부안",
+      "url": "https://www.dapa.go.kr/dapa/doc/selectDoc.do?bbsSeq=326&currentPageNo=1&docSeq=59116&menuSeq=3069&recordCountPerPage=10",
+      "published_at": "2026-09-03"
+    },
+    {
+      "id": "S2",
+      "name": "NATO Defence Investment and 5% Commitment",
+      "url": "https://www.nato.int/en/what-we-do/introduction-to-nato/defence-expenditures-and-natos-5-commitment",
+      "published_at": "2026-06-29"
+    },
+    {
+      "id": "S3",
+      "name": "NATO Defence Investment Update",
+      "url": "https://www.nato.int/en/news-and-events/articles/news/2026/07/07/defence-investment-update-record-spending-in-europe-and-canada",
+      "published_at": "2026-07-07"
+    },
+    {
+      "id": "S4",
+      "name": "한화에어로스페이스 미 육군 K9MH 계약",
+      "url": "https://www.hanwhaaerospace.com/kor/media/newsroom/view.do?seq=642",
+      "published_at": "2026-08-19"
+    },
+    {
+      "id": "S5",
+      "name": "한화그룹 한화에어로스페이스 2026년 2분기 실적",
+      "url": "https://www.hanwha.co.kr/newsroom/media_center/news/news_view.do?seq=16046",
+      "published_at": "2026-07-31"
+    },
+    {
+      "id": "S6",
+      "name": "한화에어로스페이스 2026년 1분기 실적",
+      "url": "https://www.hanwhaaerospace.com/kor/media/newsroom/view.do?seq=625",
+      "published_at": "2026-04-30"
+    },
+    {
+      "id": "S7",
+      "name": "한화에어로스페이스 뉴스룸 목록",
+      "url": "https://m.hanwhaaerospace.com/kor/media/newsroom/list.do",
+      "published_at": null
+    },
+    {
+      "id": "S8",
+      "name": "LIG디펜스앤에어로스페이스 2026년 2분기 잠정실적",
+      "url": "https://www.ligdefenseaerospace.com/ir/irResourceView.do?bbs_no=7438",
+      "published_at": "2026-08-06"
+    },
+    {
+      "id": "S9",
+      "name": "LIG디펜스앤에어로스페이스 2026년 2분기 IR Book",
+      "url": "https://www.ligdefenseaerospace.com/eng/ir/allReportView.do?bbs_no=7447",
+      "published_at": "2026-08-14"
+    },
+    {
+      "id": "S10",
+      "name": "LIG디펜스앤에어로스페이스 회사소식",
+      "url": "https://www.ligdefenseaerospace.com/eng/news/nex1newsNewList.do",
+      "published_at": null
+    },
+    {
+      "id": "S11",
+      "name": "e-나라지표 방산업체 경영실적",
+      "url": "https://www.index.go.kr/unity/potal/main/EachDtlPageDetail.do?idx_cd=1703",
+      "published_at": "2026-05-13"
+    },
+    {
+      "id": "S12",
+      "name": "TIGER K방산&우주 과거 시세",
+      "url": "https://kr.investing.com/etfs/463250-seoul-historical-data",
+      "published_at": null
+    },
+    {
+      "id": "S13",
+      "name": "한화에어로스페이스 컨센서스",
+      "url": "https://markets.hankyung.com/stock/012450/consensus",
+      "published_at": null
+    },
+    {
+      "id": "S14",
+      "name": "LIG디펜스앤에어로스페이스 컨센서스",
+      "url": "https://markets.hankyung.com/stock/079550/consensus",
+      "published_at": null
+    },
+    {
+      "id": "S15",
+      "name": "KOSPI 과거 시세",
+      "url": "https://kr.investing.com/indices/kospi-historical-data",
+      "published_at": null
+    },
+    {
+      "id": "S16",
+      "name": "한화에어로스페이스 KRX 지연시세",
+      "url": "https://www.kokstock.com/stock/item.asp?item_cd=012450",
+      "published_at": null
+    },
+    {
+      "id": "S17",
+      "name": "LIG디펜스앤에어로스페이스 KRX 지연시세",
+      "url": "https://www.kokstock.com/stock/item.asp?item_cd=079550",
+      "published_at": null
+    }
+  ],
+  "data_gaps": [
+    "2026년 10월 21일 장 마감 여부를 확정할 수 없어 가격 기준일을 2026년 10월 20일로 통일했다.",
+    "LIG 2분기 IR 첨부 PDF의 수주잔고·현금흐름 세부 수치를 직접 추출하지 못했다.",
+    "양사의 2026년 3분기 확정 실적은 기준일 현재 공개 전이어서 추정치를 핵심 근거에서 제외했다.",
+    "2026E EPS는 동일 날짜의 시장 컨센서스이나 최근 급락 전후 추정치 변경 이력은 확인되지 않았다.",
+    "산업 전체 2026년 마진·현금흐름을 대표하는 최신 공인 통계가 없어 회사 자료로 대체하지 않았다."
+  ],
+  "generated_at": "2026-10-21T10:47:45+09:00",
+  "api_response_id": "resp_09ec4f54dcfed7da016ad8193ed29c87d1aed65a3a7ee4056f",
+  "industry_risk": "YELLOW",
+  "price_regime": "깊은 조정"
+}
