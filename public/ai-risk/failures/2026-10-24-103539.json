@@ -1,0 +1,139 @@
+{
+  "date": "2026-10-24",
+  "schema_version": 2,
+  "ui_version": "2.0.0",
+  "rules_version": "1.0",
+  "risk_level": "UNKNOWN",
+  "risk_score": null,
+  "watch": "",
+  "assessment_state": "failed",
+  "change": "unavailable",
+  "generated_at": "2026-10-24T10:35:39+09:00",
+  "headline": "자료 확인에 실패해 오늘 판정을 보류합니다.",
+  "reason": "이전 등급을 오늘의 판단으로 승계하지 않습니다.",
+  "summary": "수집 또는 검증 실패. 이전 보고서와 시장 변화를 비교하지 않습니다.",
+  "changes": [],
+  "changes_note": "데이터 확인 제한 · 시장 변화 비교 불가",
+  "next_check": "자료 수집 재실행과 출처 검증 결과",
+  "investor_view": "이 화면은 오늘의 매매 판단 근거로 사용하지 마세요.",
+  "assessment_reasons": [
+    "새로 검증된 자료가 부족합니다."
+  ],
+  "counter_evidence": [],
+  "data_gaps": [
+    "수집·검증 오류 유형: ValueError"
+  ],
+  "sources": [],
+  "axes": [
+    {
+      "id": "funding",
+      "status": "UNKNOWN",
+      "coverage": "limited",
+      "meaning": "최신 자료 확인 실패",
+      "change": "unavailable",
+      "explanation": "현재 판정에 쓸 자료를 검증하지 못했습니다.",
+      "stress": false,
+      "cashflow_impact": false,
+      "event_ids": [],
+      "items": []
+    },
+    {
+      "id": "demand",
+      "status": "UNKNOWN",
+      "coverage": "limited",
+      "meaning": "최신 자료 확인 실패",
+      "change": "unavailable",
+      "explanation": "현재 판정에 쓸 자료를 검증하지 못했습니다.",
+      "stress": false,
+      "cashflow_impact": false,
+      "event_ids": [],
+      "items": []
+    },
+    {
+      "id": "borrower",
+      "status": "UNKNOWN",
+      "coverage": "limited",
+      "meaning": "최신 자료 확인 실패",
+      "change": "unavailable",
+      "explanation": "현재 판정에 쓸 자료를 검증하지 못했습니다.",
+      "stress": false,
+      "cashflow_impact": false,
+      "event_ids": [],
+      "items": []
+    },
+    {
+      "id": "gpu",
+      "status": "UNKNOWN",
+      "coverage": "limited",
+      "meaning": "최신 자료 확인 실패",
+      "change": "unavailable",
+      "explanation": "현재 판정에 쓸 자료를 검증하지 못했습니다.",
+      "stress": false,
+      "cashflow_impact": false,
+      "event_ids": [],
+      "items": []
+    },
+    {
+      "id": "contagion",
+      "status": "UNKNOWN",
+      "coverage": "limited",
+      "meaning": "최신 자료 확인 실패",
+      "change": "unavailable",
+      "explanation": "현재 판정에 쓸 자료를 검증하지 못했습니다.",
+      "stress": false,
+      "cashflow_impact": false,
+      "event_ids": [],
+      "items": []
+    }
+  ],
+  "contagion": "현재 확인 제한",
+  "last_available_report": {
+    "date": "2026-10-23",
+    "risk_level": "UNKNOWN",
+    "assessment_state": "failed"
+  },
+  "trend": {
+    "same_rules_count": 11,
+    "days_30": {
+      "days": 30,
+      "available_count": 11,
+      "level_days": {
+        "YELLOW": 5,
+        "ORANGE": 6
+      },
+      "first_date": "2026-09-29",
+      "last_date": "2026-10-20"
+    },
+    "days_90": {
+      "days": 90,
+      "available_count": 11,
+      "level_days": {
+        "YELLOW": 5,
+        "ORANGE": 6
+      },
+      "first_date": "2026-09-29",
+      "last_date": "2026-10-20"
+    },
+    "days_180": {
+      "days": 180,
+      "available_count": 11,
+      "level_days": {
+        "YELLOW": 5,
+        "ORANGE": 6
+      },
+      "first_date": "2026-09-29",
+      "last_date": "2026-10-20"
+    }
+  },
+  "current_level_streak_days": 0,
+  "history_count": 19,
+  "rendered_at": "2026-10-24T10:35:39+09:00",
+  "html_url": "./latest.html",
+  "build_sha": "b7c63b6fc6af6f39ba1f6304136e540faa37a892",
+  "monthly_summary": {
+    "current_month": "2026-10",
+    "available": true,
+    "html": "./summary/monthly/2026-10.html",
+    "json": "./summary/monthly/2026-10.json"
+  }
+}
