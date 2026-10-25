@@ -1,0 +1,667 @@
+{
+  "date": "2026-10-25",
+  "headline": "LIG 입찰제한·한화 안전사고, 산업예산은 견조",
+  "reason": "산업 수요는 유지되나 LIG 국내 신규수주와 한화 생산안전 리스크가 급상승",
+  "next_check": "LIG 집행정지 결정, 한화 3Q 실적·대전공장 정상화, 2027 예산 국회심사",
+  "investor_view": "방산 수요와 확정 예산은 유지되지만 기업별 위험은 분리해야 한다. LIG는 집행정지 인용 전까지 국내 신규수주 불확실성이 크고, 한화는 안전개선과 생산 정상화 확인이 필요하다. 큰 낙폭만으로 저평가나 사업위험 완화를 판단할 수 없다.",
+  "industry_axes": [
+    {
+      "id": "orders",
+      "status": "GREEN",
+      "coverage": "partial",
+      "change": "unchanged",
+      "meaning": "스페인 K9·크로아티아 천무·말레이시아 해궁·미군 시제품 등 신규 계약이 이어졌고 양사 수주잔고도 장기 물량을 유지한다.",
+      "stress": false,
+      "event_ids": [
+        "E3",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "items": [
+        {
+          "label": "한화 지상방산 수주잔고",
+          "value": "38.3조원",
+          "observed_at": "2026-06-30",
+          "note": "2Q 실적발표 기준이며 수출 비중과 개별 계약 수익성은 별도 확인이 필요하다.",
+          "source_ids": [
+            "S4"
+          ],
+          "included": true
+        },
+        {
+          "label": "LIG 수주잔고",
+          "value": "약 24.57조원",
+          "observed_at": "2026-06-30",
+          "note": "연말 26.23조원보다 감소했으나 중동 천궁-II 등 장기 물량은 유지됐다.",
+          "source_ids": [
+            "S8"
+          ],
+          "included": true
+        },
+        {
+          "label": "LIG 국내 입찰제한의 산업 확산",
+          "value": null,
+          "observed_at": "2026-10-22",
+          "note": "개별 회사 제재로 확인돼 산업 전체 수주위험으로 확대하지 않았다.",
+          "source_ids": [
+            "S11"
+          ],
+          "included": false
+        }
+      ]
+    },
+    {
+      "id": "budget",
+      "status": "GREEN",
+      "coverage": "sufficient",
+      "change": "better",
+      "meaning": "2026년 확정 국방예산과 방위력개선비가 각각 전년 대비 7.5%, 11.9% 증가해 국내 조달 기반은 견조하다.",
+      "stress": false,
+      "event_ids": [],
+      "items": [
+        {
+          "label": "2026년 확정 국방예산",
+          "value": "65조8642억원, 전년 대비 +7.5%",
+          "observed_at": "2025-12-02",
+          "note": "국회 본회의 의결 기준 확정액이다.",
+          "source_ids": [
+            "S1"
+          ],
+          "included": true
+        },
+        {
+          "label": "2026년 방위력개선비",
+          "value": "19조9653억원, 전년 대비 +11.9%",
+          "observed_at": "2025-12-02",
+          "note": "무기체계 양산·개발과 직접 연관성이 높은 예산 축이다.",
+          "source_ids": [
+            "S1"
+          ],
+          "included": true
+        },
+        {
+          "label": "2027년 국방예산",
+          "value": null,
+          "observed_at": "2026-10-25",
+          "note": "정부안은 제출됐으나 국회 확정 전이므로 산업 판단의 확정 수치에서 제외했다.",
+          "source_ids": [],
+          "included": false
+        }
+      ]
+    },
+    {
+      "id": "execution",
+      "status": "YELLOW",
+      "coverage": "partial",
+      "change": "worse",
+      "meaning": "한화 대전사업장 중대사고와 다수 안전법 위반은 생산확대 과정의 실행통제 취약성을 드러냈으나 산업 전반 문제로 확인되지는 않았다.",
+      "stress": true,
+      "event_ids": [
+        "E1",
+        "E8"
+      ],
+      "items": [
+        {
+          "label": "한화 대전사업장 폭발사고",
+          "value": "사망 5명·부상 2명",
+          "observed_at": "2026-06-01",
+          "note": "사고 직후 해당 작업이 중지됐고 국내 사업장 특별점검이 실시됐다.",
+          "source_ids": [
+            "S5",
+            "S6"
+          ],
+          "included": true
+        },
+        {
+          "label": "대전사업장 특별감독",
+          "value": "위반 473건·사법처리 189건·과태료 약 5억원",
+          "observed_at": "2026-10-01",
+          "note": "폭발·화재·누출 관련 안전보건규칙 위반 91건이 포함됐다.",
+          "source_ids": [
+            "S5"
+          ],
+          "included": true
+        },
+        {
+          "label": "산업 전체 납기지연",
+          "value": null,
+          "observed_at": "2026-10-25",
+          "note": "한화 사고 외에 국내 방산업 전체의 광범위한 납기 실패는 확인하지 못했다.",
+          "source_ids": [],
+          "included": false
+        }
+      ]
+    },
+    {
+      "id": "profitability",
+      "status": "YELLOW",
+      "coverage": "partial",
+      "change": "unchanged",
+      "meaning": "상반기 수출 매출과 이익은 성장했지만 계약별 원가·환율·선수금·증설비용 자료가 제한돼 산업 전체 마진 지속성을 확정하기 어렵다.",
+      "stress": false,
+      "event_ids": [
+        "E2",
+        "E7"
+      ],
+      "items": [
+        {
+          "label": "한화 2Q26 영업이익",
+          "value": "1조3655억원",
+          "observed_at": "2026-06-30",
+          "note": "지상방산 영업이익은 5330억원이며 연결 실적에는 한화오션·한화시스템이 포함된다.",
+          "source_ids": [
+            "S4"
+          ],
+          "included": true
+        },
+        {
+          "label": "LIG 2Q26 영업이익",
+          "value": "1057억원, 영업이익률 9.5%",
+          "observed_at": "2026-06-30",
+          "note": "1Q 영업이익률 14.7%에서 낮아져 수출 진행률과 계약믹스 변동성을 보여준다.",
+          "source_ids": [
+            "S8"
+          ],
+          "included": true
+        },
+        {
+          "label": "산업 공통 원가·현금흐름",
+          "value": null,
+          "observed_at": "2026-10-25",
+          "note": "동일 기준의 산업 집계가 없어 방향 판단에서 제외했다.",
+          "source_ids": [],
+          "included": false
+        }
+      ]
+    }
+  ],
+  "holdings": [
+    {
+      "id": "hanwha_aerospace",
+      "name": "한화에어로스페이스",
+      "status": "ORANGE",
+      "change": "worse",
+      "reason": "수주·실적은 견조하지만 사망사고와 473건 안전법 위반으로 실행·법률 위험이 높다.",
+      "event_ids": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E8",
+        "E9",
+        "E10"
+      ],
+      "items": [
+        {
+          "label": "2Q26 실적",
+          "value": "매출 9조2929억원·영업이익 1조3655억원",
+          "observed_at": "2026-06-30",
+          "note": "분기 최대 실적이나 연결 자회사 실적과 비지배지분을 분리해 봐야 한다.",
+          "source_ids": [
+            "S4"
+          ],
+          "included": true
+        },
+        {
+          "label": "지상방산 수주잔고",
+          "value": "38.3조원",
+          "observed_at": "2026-06-30",
+          "note": "폴란드·이집트·호주 납품 진행이 실적을 지지했다.",
+          "source_ids": [
+            "S4"
+          ],
+          "included": true
+        },
+        {
+          "label": "대전사업장 사고·감독",
+          "value": "사망 5명·부상 2명, 위반 473건",
+          "observed_at": "2026-10-01",
+          "note": "생산안전, 행정·형사 절차, 추가 개선비용과 납기 영향 확인이 필요하다.",
+          "source_ids": [
+            "S5",
+            "S6"
+          ],
+          "included": true
+        },
+        {
+          "label": "미군 K9MH 시제품 계약",
+          "value": "6문",
+          "observed_at": "2026-08-19",
+          "note": "미국 시장 진입의 초기 계약으로 후속 양산 수주를 보장하지 않는다.",
+          "source_ids": [
+            "S7"
+          ],
+          "included": true
+        },
+        {
+          "label": "스페인 K9 실행계약",
+          "value": "계약금액 비공개",
+          "observed_at": "2026-08-31",
+          "note": "선급금 조건은 확인됐으나 금액·마진은 공개 유보됐다.",
+          "source_ids": [
+            "S9"
+          ],
+          "included": true
+        },
+        {
+          "label": "크로아티아 천무 계약",
+          "value": "공시 계약금액 비공개",
+          "observed_at": "2026-09-11",
+          "note": "신규 유럽 수출 계약이나 수익성은 미확인이다.",
+          "source_ids": [
+            "S10"
+          ],
+          "included": true
+        },
+        {
+          "label": "미국 탄약 생산거점 투자",
+          "value": "7년간 22억달러",
+          "observed_at": "2026-09-21",
+          "note": "현지 공급망 진입 기회와 동시에 장기 자본집행·가동률 위험을 수반한다.",
+          "source_ids": [
+            "S13"
+          ],
+          "included": true
+        },
+        {
+          "label": "한화시스템의 한화오션 지분 처분",
+          "value": "약 1조3834억원",
+          "observed_at": "2026-10-19",
+          "note": "유동성과 전략투자 재원을 확보하지만 1년 PRS 정산 조건의 가격위험은 남는다.",
+          "source_ids": [
+            "S12"
+          ],
+          "included": true
+        },
+        {
+          "label": "3Q26 실적",
+          "value": null,
+          "observed_at": "2026-10-25",
+          "note": "2026년 10월 29일 발표 예정으로 아직 확인되지 않았다.",
+          "source_ids": [
+            "S4"
+          ],
+          "included": false
+        }
+      ]
+    },
+    {
+      "id": "lig_nex1",
+      "name": "LIG넥스원(현 LIG디펜스앤에어로스페이스)",
+      "status": "RED",
+      "change": "worse",
+      "reason": "2년 공공입찰 제한이 국내 신규수주를 직접 제약하며 집행정지 여부가 핵심이다.",
+      "event_ids": [
+        "E6",
+        "E7",
+        "E11"
+      ],
+      "items": [
+        {
+          "label": "입찰참가자격 제한",
+          "value": "2026-10-29~2028-10-28, 2년",
+          "observed_at": "2026-10-22",
+          "note": "정부·지자체·공공기관 신규 입찰 제한이며 회사는 집행정지와 취소소송을 예고했다.",
+          "source_ids": [
+            "S2",
+            "S11"
+          ],
+          "included": true
+        },
+        {
+          "label": "공시상 관련 거래규모",
+          "value": "2조7773억원, 최근 매출의 64.5%",
+          "observed_at": "2026-10-22",
+          "note": "기존 계약이 즉시 해지되는 금액이 아니라 제재 공시에 기재된 거래처 매출 규모다.",
+          "source_ids": [
+            "S11"
+          ],
+          "included": true
+        },
+        {
+          "label": "기존계약·해외수출 영향",
+          "value": "직접 적용 제외",
+          "observed_at": "2026-10-21",
+          "note": "기존 계약과 해외 수출은 자동 중단되지 않지만 국내 후속 양산·개발 신규수주가 문제다.",
+          "source_ids": [
+            "S20"
+          ],
+          "included": true
+        },
+        {
+          "label": "2Q26 실적",
+          "value": "매출 1조1101억원·영업이익 1057억원",
+          "observed_at": "2026-06-30",
+          "note": "전년 동기 대비 성장했으나 1Q보다 영업이익률이 낮아졌다.",
+          "source_ids": [
+            "S8"
+          ],
+          "included": true
+        },
+        {
+          "label": "2Q26 수주잔고",
+          "value": "약 24.57조원",
+          "observed_at": "2026-06-30",
+          "note": "기존 잔고는 완충 역할을 하지만 입찰제한 장기화 시 신규 국내 잔고 보충이 약해질 수 있다.",
+          "source_ids": [
+            "S8"
+          ],
+          "included": true
+        },
+        {
+          "label": "말레이시아 해궁 수출계약",
+          "value": "약 1404억원",
+          "observed_at": "2026-07-24",
+          "note": "해외 수출 다변화에 긍정적이나 국내 제재위험을 상쇄한다고 단정할 수 없다.",
+          "source_ids": [
+            "S2"
+          ],
+          "included": true
+        },
+        {
+          "label": "유상증자·선급금",
+          "value": "공시 존재, 최종 현금흐름 영향 미확인",
+          "observed_at": "2026-09-29",
+          "note": "증설·계열 투자와 관련한 자금집행 조건을 추가 확인해야 한다.",
+          "source_ids": [
+            "S2"
+          ],
+          "included": true
+        },
+        {
+          "label": "법원 집행정지 결정",
+          "value": null,
+          "observed_at": "2026-10-25",
+          "note": "기준일 현재 인용 여부가 확인되지 않아 제재 효력이 예정대로 발생하는 시나리오를 유지했다.",
+          "source_ids": [],
+          "included": false
+        }
+      ]
+    }
+  ],
+  "price": {
+    "as_of": "2026-10-23",
+    "hanwha_close": 792000,
+    "hanwha_high_52w": 1655000,
+    "hanwha_drawdown_pct": -52.15,
+    "lig_close": 475500,
+    "lig_high_52w": 1118000,
+    "lig_drawdown_pct": -57.47,
+    "defense_etf_close": 25010,
+    "kospi_close": 5550.3,
+    "hanwha_eps_2026": 45048,
+    "hanwha_per_2026": 17.58,
+    "lig_eps_2026": 16384,
+    "lig_per_2026": 29.02,
+    "interpretation": "양사와 방산 ETF가 깊게 조정됐고 KOSPI도 최근 고점 대비 변동성이 커졌다. 한화 낙폭은 안전·실적 기대와 시장 조정을 함께 반영하며, LIG는 입찰제한이라는 기업 고유 위험이 겹쳤다. PER은 10월 8일 확인된 2026E EPS에 10월 23일 종가를 적용한 단순 계산치로, 낙폭만으로 저평가나 매수신호를 뜻하지 않는다.",
+    "source_ids": [
+      "S14",
+      "S15",
+      "S16",
+      "S17",
+      "S18",
+      "S19"
+    ]
+  },
+  "events": [
+    {
+      "id": "E1",
+      "date": "2026-06-01",
+      "target": "hanwha_aerospace",
+      "direction": "negative",
+      "title": "대전사업장 폭발사고",
+      "summary": "추진제 관련 세척실 폭발로 5명이 사망하고 2명이 다쳤으며 해당 작업이 중지됐다.",
+      "source_ids": [
+        "S5",
+        "S6"
+      ]
+    },
+    {
+      "id": "E2",
+      "date": "2026-07-31",
+      "target": "hanwha_aerospace",
+      "direction": "positive",
+      "title": "2Q 분기 최대 영업이익",
+      "summary": "연결 영업이익 1조3655억원, 지상방산 수주잔고 38.3조원을 발표했다.",
+      "source_ids": [
+        "S4"
+      ]
+    },
+    {
+      "id": "E3",
+      "date": "2026-08-19",
+      "target": "hanwha_aerospace",
+      "direction": "positive",
+      "title": "미군 K9MH 시제품 계약",
+      "summary": "한화디펜스USA가 미 육군에 차륜형 K9 시제품 6문을 공급하는 계약을 체결했다.",
+      "source_ids": [
+        "S7"
+      ]
+    },
+    {
+      "id": "E4",
+      "date": "2026-08-31",
+      "target": "hanwha_aerospace",
+      "direction": "positive",
+      "title": "스페인 K9 실행계약",
+      "summary": "스페인에 K9 자주포 등을 공급하는 실행계약을 체결했으나 계약금액은 공개 유보됐다.",
+      "source_ids": [
+        "S9"
+      ]
+    },
+    {
+      "id": "E5",
+      "date": "2026-09-11",
+      "target": "hanwha_aerospace",
+      "direction": "positive",
+      "title": "크로아티아 천무 계약",
+      "summary": "크로아티아 대상 천무 다연장로켓 수출 계약을 공시해 유럽 수주 기반을 확대했다.",
+      "source_ids": [
+        "S10"
+      ]
+    },
+    {
+      "id": "E6",
+      "date": "2026-07-24",
+      "target": "lig_nex1",
+      "direction": "positive",
+      "title": "말레이시아 해궁 수출계약",
+      "summary": "약 1404억원 규모의 함대공유도탄 해궁 수출계약을 체결했다.",
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "id": "E7",
+      "date": "2026-08-06",
+      "target": "lig_nex1",
+      "direction": "positive",
+      "title": "2Q 매출·이익 성장",
+      "summary": "매출 1조1101억원, 영업이익 1057억원을 기록해 전년 동기 대비 성장했다.",
+      "source_ids": [
+        "S8"
+      ]
+    },
+    {
+      "id": "E8",
+      "date": "2026-10-01",
+      "target": "hanwha_aerospace",
+      "direction": "negative",
+      "title": "대전사업장 특별감독 발표",
+      "summary": "노동부가 473건의 위반을 적발하고 189건 사법처리와 약 5억원 과태료를 발표했다.",
+      "source_ids": [
+        "S5"
+      ]
+    },
+    {
+      "id": "E9",
+      "date": "2026-09-21",
+      "target": "hanwha_aerospace",
+      "direction": "mixed",
+      "title": "미국 탄약거점 22억달러 투자",
+      "summary": "미국 아칸소에 7년간 22억달러를 투자해 탄약 생산거점을 조성하기로 했다.",
+      "source_ids": [
+        "S13"
+      ]
+    },
+    {
+      "id": "E10",
+      "date": "2026-10-19",
+      "target": "hanwha_aerospace",
+      "direction": "mixed",
+      "title": "한화오션 지분 유동화",
+      "summary": "종속회사 한화시스템이 한화오션 주식 약 1조3834억원을 처분해 유동성을 확보했다.",
+      "source_ids": [
+        "S12"
+      ]
+    },
+    {
+      "id": "E11",
+      "date": "2026-10-22",
+      "target": "lig_nex1",
+      "direction": "negative",
+      "title": "공공입찰 2년 제한 공시",
+      "summary": "2026년 10월 29일부터 2년간 공공기관 입찰참가 제한 처분을 받고 법적 대응을 예고했다.",
+      "source_ids": [
+        "S2",
+        "S11"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "name": "대한민국 정책브리핑·국방부 2026년 국방예산 확정",
+      "url": "https://m.korea.kr/news/policyFocusView.do?newsId=148955936&pkgId=49500823",
+      "published_at": "2025-12-05"
+    },
+    {
+      "id": "S2",
+      "name": "LIG Defense&Aerospace 공시 목록",
+      "url": "https://www.ligdefenseaerospace.com/ir/posting.do",
+      "published_at": null
+    },
+    {
+      "id": "S3",
+      "name": "방위사업청 2026년 국방예산 정부안",
+      "url": "https://www.dapa.go.kr/dapa/doc/selectDoc.do?bbsSeq=326&docSeq=21667&menuSeq=3069",
+      "published_at": "2025-09-02"
+    },
+    {
+      "id": "S4",
+      "name": "한화그룹 한화에어로스페이스 2Q26 실적발표",
+      "url": "https://www.hanwha.co.kr/newsroom/media_center/news/news_view.do?seq=16046",
+      "published_at": "2026-07-31"
+    },
+    {
+      "id": "S5",
+      "name": "고용노동부 한화에어로스페이스 대전사업장 특별감독 결과",
+      "url": "https://www.moel.go.kr/news/enews/report/enewsView.do?news_seq=20032",
+      "published_at": "2026-10-01"
+    },
+    {
+      "id": "S6",
+      "name": "고용노동부 한화에어로스페이스 폭발사고 긴급지시",
+      "url": "https://moel.go.kr/news/enews/report/enewsView.do?news_seq=19469",
+      "published_at": "2026-06-01"
+    },
+    {
+      "id": "S7",
+      "name": "한화에어로스페이스 미 육군 K9MH 시제품 계약",
+      "url": "https://www.hanwhaaerospace.com/kor/media/newsroom/view.do?seq=642",
+      "published_at": "2026-08-19"
+    },
+    {
+      "id": "S8",
+      "name": "LIG 2Q26 DART 실적·수주잔고 집계",
+      "url": "https://atsview.com/stock/079550",
+      "published_at": null
+    },
+    {
+      "id": "S9",
+      "name": "한화에어로스페이스 스페인 K9 공급계약 공시 요약",
+      "url": "https://finnote.io/b/vtikdrie",
+      "published_at": "2026-08-31"
+    },
+    {
+      "id": "S10",
+      "name": "한화에어로스페이스 최근 공시 목록",
+      "url": "https://www.k5.co.kr/stock/012450/official_notice",
+      "published_at": null
+    },
+    {
+      "id": "S11",
+      "name": "LIG 거래처와의 거래중단 DART 공시 원문 요약",
+      "url": "https://dartbrief.com/disclosures/20261022800195",
+      "published_at": "2026-10-22"
+    },
+    {
+      "id": "S12",
+      "name": "한화에어로스페이스 한화오션 지분 처분 공시 요약",
+      "url": "https://www.chickstockfi.com/disclosures/20261019800494",
+      "published_at": "2026-10-19"
+    },
+    {
+      "id": "S13",
+      "name": "연합뉴스 한화에어로스페이스 미국 탄약 생산거점 투자",
+      "url": "https://www.yna.co.kr/amp/view/AKR20260922050700003",
+      "published_at": "2026-09-22"
+    },
+    {
+      "id": "S14",
+      "name": "한경코리아마켓 한화에어로스페이스 종가·컨센서스",
+      "url": "https://markets.hankyung.com/stock/012450/consensus",
+      "published_at": null
+    },
+    {
+      "id": "S15",
+      "name": "한경코리아마켓 LIG 종가·52주 고점",
+      "url": "https://markets.hankyung.com/stock/079550/public-announcement",
+      "published_at": null
+    },
+    {
+      "id": "S16",
+      "name": "TIGER K방산&우주 일별 시세",
+      "url": "https://pflow.keywordegg.com/domestic/463250",
+      "published_at": null
+    },
+    {
+      "id": "S17",
+      "name": "한경코리아마켓 KOSPI 지수",
+      "url": "https://markets.hankyung.com/indices/kospi",
+      "published_at": null
+    },
+    {
+      "id": "S18",
+      "name": "FnGuide 한화에어로스페이스 2026E 컨센서스",
+      "url": "https://comp.wisereport.co.kr/company/c1050001.aspx?cmp_cd=012450&cn=",
+      "published_at": null
+    },
+    {
+      "id": "S19",
+      "name": "FnGuide LIG 2026E 컨센서스",
+      "url": "https://comp.wisereport.co.kr/company/c1050001.aspx?cmp_cd=079550",
+      "published_at": null
+    },
+    {
+      "id": "S20",
+      "name": "서울경제 LIG 2년 입찰제한 영향",
+      "url": "https://en.sedaily.com/finance/2026/10/21/lig-da-plunges-14-percent-on-two-year-bidding-ban",
+      "published_at": "2026-10-21"
+    }
+  ],
+  "data_gaps": [
+    "LIG 입찰제한 처분에 대한 법원의 집행정지 인용 여부는 2026-10-25 기준 확인되지 않았다.",
+    "한화 대전사업장의 전체 생산 정상화율과 사고가 개별 미사일·추진기관 납기에 미친 영향은 공개되지 않았다.",
+    "한화 스페인 K9·크로아티아 천무 계약금액과 예상 마진은 공시 유보 또는 비공개다.",
+    "2027년 국방예산은 정부안 단계로 국회 확정액과 세부 사업별 증감은 아직 확정되지 않았다.",
+    "TIGER K방산&우주의 52주 고점과 고점 대비 낙폭은 동일 기준의 검증값을 확보하지 못해 반환하지 않았다.",
+    "2026E EPS는 2026-10-08 확인 컨센서스이며 10월 하순 주가 급락과 LIG 제재 이후 추정치 변경은 아직 충분히 반영되지 않았을 수 있다."
+  ],
+  "generated_at": "2026-10-25T10:23:26+09:00",
+  "api_response_id": "resp_072e1ecfe2d12dc5016add5987931487d294ffb3b7b7a72d4a",
+  "industry_risk": "YELLOW",
+  "price_regime": "깊은 조정"
+}
