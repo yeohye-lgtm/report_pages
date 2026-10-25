@@ -1,27 +1,27 @@
 {
   "schema_version": 2,
   "month": "2026-10",
-  "as_of": "2026-10-24",
+  "as_of": "2026-10-25",
   "period_state": "in_progress",
-  "report_count": 9,
+  "report_count": 10,
   "first_date": "2026-10-02",
-  "last_date": "2026-10-20",
+  "last_date": "2026-10-25",
   "by_rules_version": {
     "1.0": {
-      "report_count": 9,
-      "eligible_count": 9,
+      "report_count": 10,
+      "eligible_count": 10,
       "level_days": {
-        "ORANGE": 5,
+        "ORANGE": 6,
         "YELLOW": 4
       },
       "limited_count": 0
     }
   },
   "stress_axis_report_counts": {
-    "funding": 8,
-    "borrower": 9,
+    "funding": 9,
+    "borrower": 10,
     "gpu": 2,
-    "demand": 1
+    "demand": 2
   },
   "note": "보고서 기록 수입니다. 독립 시장 관측 수가 아닙니다. 기존 소수점 점수는 평균내지 않습니다."
 }
