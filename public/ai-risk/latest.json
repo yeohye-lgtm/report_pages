@@ -1,89 +1,102 @@
 {
-  "date": "2026-10-26",
-  "headline": "AI 신용스트레스 지속, 조건부 노출 확대",
-  "reason": "CoreWeave 고비용 조달과 Meta 장기약정 확대가 병존",
-  "summary": "CoreWeave 채권·CDS의 스트레스와 높은 부채상환 부담은 계속 확인된다. 대형 플랫폼의 AI 수요와 매출은 강하지만 Meta의 현금흐름 부담과 장기 임대·잔존가치 보증 노출이 확대됐다. 실제 지급불능이나 보증 실행의 전염은 확인되지 않았다.",
-  "change": "worse",
+  "date": "2026-10-27",
+  "headline": "CoreWeave 스트레스 지속, Meta는 자본조달 확대",
+  "reason": "약한 차주 조달비용이 높고 AI 투자 부담이 외부조달로 이어졌다",
+  "summary": "CoreWeave 채권수익률은 10월 23일에도 15%대로 확인돼 약한 AI 인프라 차주의 조달 스트레스가 지속됐다. Meta는 강한 매출 성장에도 분기 잉여현금흐름이 적자로 전환된 뒤 대규모 주식·전환우선주 조달을 시작했으나, 실제 지급불능이나 보증 실행은 확인되지 않았다.",
+  "change": "unchanged",
   "changes": [
-    "Meta는 9월 말 미개시 임대 3,557억달러와 최대 RVG 415억달러를 공시했다.",
-    "H100 네오클라우드 임대료 지수는 10월 25일 2.89달러로 소폭 상승했다."
+    "Meta가 2026-10-26 약 350억달러의 주식·전환우선주 공모를 시작하고 향후 약 600억달러 ATM 계획을 발표했다.",
+    "미국 10년물은 2026-10-26 5.00%로 전 거래일과 같았고 30년물은 5.31%로 2bp 하락했다."
   ],
-  "changes_note": "Meta 3분기 10-Q의 확대된 계약 노출을 새로 반영했다.",
-  "next_check": "CoreWeave·Oracle CDS 최신 종가와 신규 차환 체결조건",
-  "investor_view": "수요 성장만으로 신용위험 완화를 단정하기 어렵다. CoreWeave의 실제 신규 조달조건, Meta의 투자 후 현금회복, NVIDIA·Meta 보증이나 약정의 실행 여부가 핵심이다. 반면 강한 클라우드 매출과 확보된 유동성이 즉각적인 시스템 신용사건 가능성을 일부 제한한다.",
+  "changes_note": "신규 자본조달 계획은 확인됐으나 실제 신용사건 단계 변화는 없음",
+  "next_check": "Meta 공모 완료액과 CoreWeave 최신 채권·CDS 가격",
+  "investor_view": "CoreWeave의 높은 시장수익률과 Meta의 외부자본 조달은 AI 투자 사이클의 자금부담이 현실화됐음을 시사한다. 다만 장기금리 안정, Lambda의 완료된 투자등급 금융, 견조한 H100 임대료는 전면적 경색과 반대된다. 공모 완료 여부와 약한 차주의 실제 차환조건을 함께 확인해야 한다.",
   "assessment_reasons": [
-    "CoreWeave 일부 채권수익률이 약 15~16%, CDS가 약 1,200bp로 관측됐다.",
-    "CoreWeave의 반기 원리금 지급액이 영업현금 유입을 상회했고 고객집중도도 높다.",
-    "Meta는 분기 잉여현금흐름 적자와 함께 장기 인프라 계약·RVG 노출을 확대했다.",
-    "NVIDIA의 대규모 보증과 클라우드 구매약정이 생태계의 조건부 연결성을 높인다."
+    "CoreWeave 채권의 최저수익률이 2026-10-23에도 15.0~15.6%로 확인됐다.",
+    "CoreWeave의 2026년 상반기 원리금 지급액은 62억달러로 영업현금 유입 37억달러를 웃돌았다.",
+    "Meta는 3분기 매출이 26% 증가했지만 CapEx가 영업현금흐름을 초과해 잉여현금흐름이 21.2억달러 적자였다.",
+    "Meta가 약 350억달러 공모를 시작하고 추가 약 600억달러 ATM 계획을 제시해 외부자본 의존 확대가 확인됐다."
   ],
   "counter_evidence": [
-    "미국 10년·30년 국채금리는 10월 초보다 하락했다.",
-    "Microsoft·Alphabet·Amazon·Meta의 클라우드 및 광고 매출 수요는 강하게 증가했다.",
-    "CoreWeave는 155.5억달러의 유동성을 공시했고 Nebius는 담보부 금융을 완료했다.",
-    "중대한 만기 미상환, 지급불능 또는 보증 실행은 확인되지 않았다."
+    "미국 10년·30년 국채금리는 10월 초 고점보다 낮고 10월 26일에도 추가 상승하지 않았다.",
+    "Lambda는 계약 현금흐름을 담보로 10억달러 투자등급 고정금리 금융을 6.78%에 완료했다.",
+    "H100 네오클라우드 임대료 지수는 2026-10-26 기준 7일간 7.0% 상승했다.",
+    "중요 차주의 만기 미상환, 보증 청구 또는 복수 대주단의 실제 손실 전가는 확인되지 않았다."
   ],
   "data_gaps": [
-    "10월 16일 이후 CoreWeave·Oracle의 검증 가능한 CDS 종가",
-    "NVIDIA·Meta·Broadcom 개별 CDS와 회사채 스프레드",
-    "Lambda 자금조달의 완료 여부와 최종 조건",
-    "동일 H100 기준 가동률과 중고 실거래·담보 회수율",
-    "주요 데이터센터 공사·전력 지연의 현금흐름 영향"
+    "CoreWeave·Oracle·NVIDIA·Meta의 2026-10-26 기준 동일 출처 5년 CDS 종가를 확보하지 못했다.",
+    "Microsoft·Alphabet·Amazon의 9월 말 분기 실적은 기준시각까지 확인되지 않았다.",
+    "동일 조건의 H100 가동률과 검증 가능한 중고 실거래 가격이 없다.",
+    "CoreWeave의 2026년 3분기 말 유동성과 신규 차환 체결조건이 아직 공시되지 않았다.",
+    "NVIDIA·Meta의 보증 및 조건부 약정에 대한 실제 청구·지급 여부는 확인되지 않았다."
   ],
-  "contagion": "대형 보증·임대·구매약정으로 연결성은 확대됐지만 실제 보증 청구나 복수 대주단 손실 전가는 확인되지 않았다.",
+  "contagion": "보증·임대·투자 연결성은 커졌지만 실제 손실 이전이나 연쇄 신용사건은 확인되지 않았다.",
   "axes": [
     {
       "id": "funding",
       "status": "ORANGE",
-      "coverage": "sufficient",
-      "meaning": "약한 차주의 조달비용이 급등",
+      "coverage": "partial",
+      "meaning": "약한 차주의 고비용 조달 지속",
       "change": "unchanged",
-      "explanation": "CoreWeave 채권과 CDS는 스트레스 수준이며 Oracle CDS도 높은 수준으로 확대됐다. 장기 국채금리는 월초보다 하락했지만 위험 차주의 신용비용 개선은 최신 자료로 확인되지 않았다.",
+      "explanation": "CoreWeave 채권은 최신 확인 시점에도 15%대 수익률로 거래돼 조달 스트레스가 지속됐다. 장기 국채금리는 안정됐지만 주요 기업의 최신 동일 기준 CDS 자료는 제한적이다.",
       "stress": true,
       "cashflow_impact": true,
       "event_ids": [
-        "E1"
+        "E1",
+        "E5"
       ],
       "items": [
         {
-          "label": "CoreWeave 채권·CDS",
-          "value": "채권수익률 약 15~16%, CDS 약 1,200bp",
-          "note": "2026-10-16 Reuters 보도. 시장가격 기준의 신용스트레스로 실제 신규 차환 체결금리와는 구분한다.",
+          "label": "CoreWeave 선순위 무담보채",
+          "value": "최저수익률 15.0~15.6%",
+          "note": "2026-10-23 시장가격 스냅샷이다. 쿠폰이나 실제 신규 차환 체결금리와 구분한다.",
+          "observed_at": "2026-10-23",
+          "comparison": "10월 16일 Reuters의 약 15~16%와 비교해 뚜렷한 개선 없음",
+          "source_ids": [
+            "S1",
+            "S2"
+          ],
+          "included": true
+        },
+        {
+          "label": "CoreWeave 5년 CDS",
+          "value": "약 1,200bp",
+          "note": "2026-10-16 Reuters 보도상 시장 신용보험 비용이며 이후 동일 출처 종가는 확보하지 못했다.",
           "observed_at": "2026-10-16",
-          "comparison": "6월 9.625% 선순위채 발행수익률보다 악화",
+          "comparison": "최신 일별 변화 판정은 제한",
           "source_ids": [
             "S1"
           ],
           "included": true
         },
         {
-          "label": "Oracle 5년 CDS",
-          "value": "288bp",
-          "note": "S&P Global Market Intelligence 자료를 인용한 Reuters 보도상 당시 사상 최고 수준이다.",
-          "observed_at": "2026-10-15",
-          "comparison": "전일 대비 26bp 확대",
-          "source_ids": [
-            "S2"
-          ],
-          "included": true
-        },
-        {
           "label": "미국 국채 10년·30년",
-          "value": "10년 5.00%, 30년 5.33%",
-          "note": "미 재무부 명목 파수익률이며 두 만기를 하나의 장기금리 신호로 평가했다.",
-          "observed_at": "2026-10-23",
-          "comparison": "10월 1일 5.24%, 5.61%보다 하락",
+          "value": "10년 5.00%, 30년 5.31%",
+          "note": "미 재무부 명목 파수익률이다. 두 만기를 하나의 장기금리 환경으로 평가했다.",
+          "observed_at": "2026-10-26",
+          "comparison": "10월 23일 대비 10년은 동일, 30년은 2bp 하락",
           "source_ids": [
             "S3"
           ],
           "included": true
         },
         {
-          "label": "최신 개별 CDS",
+          "label": "Meta 주식·전환우선주 공모",
+          "value": "약 350억달러 시작",
+          "note": "보통주 약 225억달러와 예탁주식 약 125억달러의 공모 개시 금액이다. 완료 조달액이나 현금 유입액은 아니다.",
+          "observed_at": "2026-10-26",
+          "comparison": "향후 약 600억달러 ATM 계획도 발표됐으나 계약·매각은 미완료",
+          "source_ids": [
+            "S5"
+          ],
+          "included": true
+        },
+        {
+          "label": "최신 개별 CDS 종가",
           "value": "확인 제한",
-          "note": "CoreWeave·Oracle의 10월 16일 이후 종가와 NVIDIA·Meta의 동일 시점 검증값을 확보하지 못했다.",
+          "note": "CoreWeave·Oracle·NVIDIA·Meta의 2026-10-26 동일 출처 종가를 확보하지 못했다.",
           "observed_at": null,
-          "comparison": "일별 변화 판정 제외",
+          "comparison": "일별 신용스프레드 변화 판정 제외",
           "source_ids": [],
           "included": false
         }
@@ -92,60 +105,70 @@
     {
       "id": "demand",
       "status": "YELLOW",
-      "coverage": "sufficient",
-      "meaning": "수요 강세와 현금회수 부담 병존",
-      "change": "unchanged",
-      "explanation": "클라우드와 AI 사용량·매출은 강하게 증가했다. 그러나 Meta의 분기 FCF와 Amazon의 최근 12개월 FCF가 적자로 전환돼 투자 회수 부담이 현실화됐다.",
+      "coverage": "partial",
+      "meaning": "매출 성장과 투자회수 부담 병존",
+      "change": "worse",
+      "explanation": "Meta의 매출과 이용지표는 성장했지만 분기 CapEx가 영업현금흐름을 넘어 잉여현금흐름이 적자로 전환됐다. 다른 주요 하이퍼스케일러의 최신 분기 실적은 기준시각까지 확인되지 않았다.",
       "stress": true,
       "cashflow_impact": true,
       "event_ids": [
-        "E2"
+        "E2",
+        "E5"
       ],
       "items": [
         {
-          "label": "Meta 3분기 투자·현금흐름",
-          "value": "CapEx 349.1억달러, FCF -21.2억달러",
-          "note": "CapEx에는 금융리스 원금이 포함된다. 2026년 전체 가이던스는 1,350억~1,450억달러이며 AI 전용 금액은 아니다.",
+          "label": "Meta 3분기 수요·현금흐름",
+          "value": "매출 646.0억달러, FCF -21.2억달러",
+          "note": "매출은 전년 대비 26% 증가했다. FCF는 영업현금흐름 327.9억달러에서 설비구매와 금융리스 원금을 차감한 회사 정의 비GAAP 지표다.",
           "observed_at": "2026-09-30",
-          "comparison": "매출은 전년 대비 26% 증가했으나 FCF는 적자",
+          "comparison": "전년 동기 FCF 106.3억달러에서 적자 전환",
           "source_ids": [
             "S4"
           ],
           "included": true
         },
         {
-          "label": "Microsoft FY2026 4분기",
-          "value": "Microsoft Cloud 매출 593억달러, +27%",
-          "note": "Azure 연간 매출은 1,000억달러를 넘었고 41% 성장했다. 전체 투자액과 AI 전용 투자액은 구분되지 않았다.",
-          "observed_at": "2026-06-30",
-          "comparison": "수요 증가와 대규모 용량 확충 지속",
+          "label": "Meta 3분기 투자액",
+          "value": "CapEx 349.1억달러",
+          "note": "금융리스 원금이 포함된 총 CapEx이며 AI 전용 금액은 별도 공시되지 않았다.",
+          "observed_at": "2026-09-30",
+          "comparison": "분기 영업현금흐름 327.9억달러를 초과",
           "source_ids": [
+            "S4"
+          ],
+          "included": true
+        },
+        {
+          "label": "Meta 2026년 CapEx 가이던스",
+          "value": "1,350억~1,450억달러",
+          "note": "AI 노력과 핵심 사업 지원을 위한 총 CapEx 전망이며 AI 전용 지출과 구분되지 않는다.",
+          "observed_at": "2026-10-21",
+          "comparison": "대규모 투자가 지속될 전망",
+          "source_ids": [
+            "S4",
             "S5"
           ],
           "included": true
         },
         {
-          "label": "Alphabet 2분기 Google Cloud",
-          "value": "매출 248억달러, +82%",
-          "note": "AI 인프라와 AI 솔루션 수요가 성장 요인으로 제시됐다. AI 전용 CapEx는 별도 공시되지 않았다.",
-          "observed_at": "2026-06-30",
-          "comparison": "클라우드 영업이익도 88.1억달러로 증가",
+          "label": "Meta 이용·광고 지표",
+          "value": "DAP 36.4억명, 광고단가 +14%",
+          "note": "가족 앱 일간활성이용자는 전년 대비 3%, 광고 노출은 10% 증가했다.",
+          "observed_at": "2026-09-30",
+          "comparison": "핵심 사업의 수요·수익화는 방어 근거",
           "source_ids": [
-            "S6"
+            "S4"
           ],
           "included": true
         },
         {
-          "label": "Amazon 2분기 AWS·현금흐름",
-          "value": "AWS 매출 422억달러, +37%; TTM FCF -76억달러",
-          "note": "FCF 감소는 주로 AI 관련 설비투자 증가에서 발생했다. 분기 현금 CapEx는 531억달러다.",
-          "observed_at": "2026-06-30",
-          "comparison": "AWS 수익성은 증가했으나 전체 현금투자 부담 확대",
-          "source_ids": [
-            "S7",
-            "S8"
-          ],
-          "included": true
+          "label": "Microsoft·Alphabet·Amazon 최신 분기",
+          "value": "확인 제한",
+          "note": "기준시각까지 9월 말 분기의 공식 실적 원문을 확보하지 못했다.",
+          "observed_at": null,
+          "comparison": "이전 분기 수치로 최신 수요를 대체하지 않음",
+          "source_ids": [],
+          "included": false
         }
       ]
     },
@@ -153,65 +176,77 @@
       "id": "borrower",
       "status": "ORANGE",
       "coverage": "partial",
-      "meaning": "고레버리지 차주의 차환압박 지속",
+      "meaning": "고레버리지 차주의 상환압박 지속",
       "change": "unchanged",
-      "explanation": "CoreWeave의 시장 조달비용과 원리금 부담은 중대한 압박을 나타낸다. 다만 충분한 공시 유동성이 있고 실제 만기 미상환이나 지급불능은 확인되지 않았다.",
+      "explanation": "CoreWeave는 대규모 미인출 약정을 보유하지만 원리금 지급이 영업현금 유입을 웃돌고 시장 채권수익률도 높다. Lambda의 완료된 투자등급 금융은 차주별 차별화가 유지됨을 보여준다.",
       "stress": true,
       "cashflow_impact": true,
       "event_ids": [
-        "E1"
+        "E1",
+        "E6"
       ],
       "items": [
         {
-          "label": "CoreWeave 차입금·유동성",
-          "value": "총차입금 356억달러, 유동성 155.5억달러",
-          "note": "유동성에는 담보부 미인출 약정 100.1억달러가 포함되며 자유 현금과 동일하지 않다.",
+          "label": "CoreWeave 차입금·가용약정",
+          "value": "총차입금 356억달러, 미인출 약정 100억달러",
+          "note": "미인출 약정은 인출조건과 프로젝트별 제한이 있어 자유 현금과 동일하지 않다.",
           "observed_at": "2026-06-30",
-          "comparison": "2025년 말 유동성 68.6억달러에서 증가",
+          "comparison": "최신 분기 말 수치는 아직 미공시",
           "source_ids": [
-            "S9"
+            "S6"
+          ],
+          "included": true
+        },
+        {
+          "label": "CoreWeave 현금성 자산",
+          "value": "현금·시장성증권 55억달러, 제한현금 14억달러",
+          "note": "제한현금은 담보부 대출 관련 예금이 주를 이루며 일반 용도 현금과 구분한다.",
+          "observed_at": "2026-06-30",
+          "comparison": "미인출 약정과 별도로 기록",
+          "source_ids": [
+            "S6"
           ],
           "included": true
         },
         {
           "label": "CoreWeave 원리금 부담",
-          "value": "반기 원리금 62억달러, 영업현금 유입 37억달러",
-          "note": "원금 52억달러와 이자 9.82억달러가 포함된다. 투자현금 유출은 148.7억달러였다.",
+          "value": "반기 원리금 62억달러, 영업현금 37억달러",
+          "note": "원금 52억달러와 이자 9.82억달러가 포함된다. 실제 현금흐름상 상환부담이 확인됐다.",
           "observed_at": "2026-06-30",
-          "comparison": "영업현금보다 부채상환액이 큰 구조",
+          "comparison": "원리금 지급액이 영업현금 유입을 초과",
           "source_ids": [
-            "S9"
+            "S6"
           ],
           "included": true
         },
         {
           "label": "CoreWeave 고객집중",
           "value": "상위 고객 매출 비중 36%, 26%, 10%",
-          "note": "상위 두 고객은 각각 매출채권의 32%를 차지했다. 고객명은 공시되지 않았다.",
+          "note": "상위 세 고객 합계가 분기 매출의 72%이며 고객 계약 현금흐름 의존도가 높다.",
           "observed_at": "2026-06-30",
-          "comparison": "최대 고객 비중은 전년 71%에서 낮아졌으나 집중 지속",
+          "comparison": "전년 동기 최대 고객 71%보다는 분산됐으나 집중 지속",
           "source_ids": [
-            "S9"
+            "S6"
           ],
           "included": true
         },
         {
-          "label": "Nebius 담보부 금융",
-          "value": "7.75억달러, SOFR+2.50%",
-          "note": "배치된 GPU와 투자등급 고객 계약 현금흐름을 담보로 한 2030년 만기 금융이 완료됐다.",
-          "observed_at": "2026-07-17",
-          "comparison": "완료된 성장금융으로 방어 근거",
+          "label": "Lambda 담보부 고정금리 금융",
+          "value": "10억달러, 고정금리 6.78%",
+          "note": "투자등급 고객 두 곳의 계약 현금흐름을 담보로 한 지연인출 대출이며 실제 종결됐다. Moody's Baa1과 DBRS A(low)를 받았다.",
+          "observed_at": "2026-10-01",
+          "comparison": "약한 차주 전반의 시장폐쇄가 아니라는 방어 근거",
           "source_ids": [
-            "S10"
+            "S7"
           ],
           "included": true
         },
         {
-          "label": "Lambda 최신 조달",
-          "value": "확인 제한",
-          "note": "최대 40억달러 조달 추진 보도 이후 완료 여부와 최종 조건을 공식 원문에서 확인하지 못했다.",
+          "label": "CoreWeave 실제 지급불능",
+          "value": null,
+          "note": "만기 미상환, 이자 미지급 또는 법적 구조조정은 확인되지 않았다.",
           "observed_at": null,
-          "comparison": "계획과 완료를 구분",
+          "comparison": "시장가격 스트레스와 실제 신용사건을 구분",
           "source_ids": [],
           "included": false
         }
@@ -223,7 +258,7 @@
       "coverage": "partial",
       "meaning": "임대료 견조, 담보가치는 불명",
       "change": "unchanged",
-      "explanation": "동일 방법론의 H100 임대료 지수는 전일 대비 소폭 상승했고 7일 상승세를 유지했다. 가동률과 중고 실거래가 없어 잔존 담보가치까지 판단할 수 없다.",
+      "explanation": "동일 방법론의 H100 네오클라우드 임대료 지수는 7일 상승세를 유지했다. 가동률과 검증 가능한 중고 실거래가 부족해 잔존 담보가치는 판단할 수 없다.",
       "stress": false,
       "cashflow_impact": false,
       "event_ids": [],
@@ -231,11 +266,11 @@
         {
           "label": "H100 네오클라우드 임대료 지수",
           "value": "2.89달러/GPU·시간",
-          "note": "기종·계약기간·클러스터·인터커넥트를 표준화한 네오클라우드 지수다. 하이퍼스케일러 지수와 분리된다.",
-          "observed_at": "2026-10-25",
-          "comparison": "전일 2.88달러에서 소폭 상승, 7일간 6.2% 상승",
+          "note": "기종·임대조건·성능·지역을 표준화한 네오클라우드 지수이며 하이퍼스케일러 가격과 분리된다.",
+          "observed_at": "2026-10-26",
+          "comparison": "7일간 7.0% 상승, 전일 보고값과 동일",
           "source_ids": [
-            "S11"
+            "S8"
           ],
           "included": true
         },
@@ -244,16 +279,16 @@
           "value": "확인 제한",
           "note": "동일 기종·공급자·계약기간 기준의 최신 검증 가능한 가동률을 확보하지 못했다.",
           "observed_at": null,
-          "comparison": "임대료와 연결한 변화율 계산 제외",
+          "comparison": "임대료와 연결한 경제성 변화율 계산 제외",
           "source_ids": [],
           "included": false
         },
         {
           "label": "H100 중고 실거래·담보가치",
           "value": null,
-          "note": "검증 가능한 최신 실거래 가격과 대출 회수율 자료가 없다.",
+          "note": "견적·감정가는 확인됐으나 계약조건이 검증된 최신 실거래와 대출 회수율은 확보하지 못했다.",
           "observed_at": null,
-          "comparison": "잔존가치 판정 제외",
+          "comparison": "잔존 담보가치 판정 제외",
           "source_ids": [],
           "included": false
         }
@@ -263,83 +298,82 @@
       "id": "contagion",
       "status": "YELLOW",
       "coverage": "partial",
-      "meaning": "대형 약정 확대, 손실 이전 없음",
+      "meaning": "연결성 확대, 실제 손실 이전 없음",
       "change": "worse",
-      "explanation": "NVIDIA와 Meta의 장기 보증·구매·임대 약정은 생태계 연결성을 높인다. Meta의 최신 10-Q에서 노출 범위가 확대됐지만 보증 실행이나 실제 손실 이전은 확인되지 않았다.",
+      "explanation": "NVIDIA와 Meta의 장기 보증·임대·구매약정에 더해 반도체 기업들의 Meta 공모 참여 의향이 새 연결고리로 제시됐다. 다만 참여 의향은 비구속적이며 보증 실행이나 손실 전가는 확인되지 않았다.",
       "stress": false,
       "cashflow_impact": false,
       "event_ids": [
         "E3",
-        "E4"
+        "E4",
+        "E5"
       ],
       "items": [
         {
-          "label": "NVIDIA SB Energy·OpenAI 보증",
-          "value": "최대 1,050억달러",
-          "note": "4.25GW 시설의 정의된 임대료·전력지급 일부에 대한 조건부 한도다. 시설별 가동 후 단계적으로 발효된다.",
+          "label": "NVIDIA 데이터센터 보증 최대노출",
+          "value": "총 1,085억달러",
+          "note": "AI 클라우드 보증 35억달러와 SB Energy·OpenAI 관련 보증 1,050억달러의 최대 총한도다. 후자는 시설 가동과 임차인 채무불이행 등 조건 충족 시 단계적으로 발효된다.",
           "observed_at": "2026-08-27",
           "comparison": "현재 장부부채나 즉시 현금지급과 동일하지 않음",
           "source_ids": [
-            "S12"
+            "S9"
           ],
           "included": true
         },
         {
           "label": "NVIDIA AI 클라우드 서비스 약정",
           "value": "360억달러",
-          "note": "통상 6년 계약이며 제3자 고객이나 NVIDIA가 용량을 사용하면 약정이 감소한다.",
+          "note": "통상 6년 계약이며 제3자 또는 NVIDIA가 용량을 사용하면 약정이 감소한다. 보증 한도와 별도 계약이다.",
           "observed_at": "2026-07-26",
-          "comparison": "보증과 별도 계약으로 중복 합산하지 않음",
+          "comparison": "보증과 중복 합산하지 않음",
           "source_ids": [
-            "S12"
+            "S9"
           ],
           "included": true
         },
         {
           "label": "Meta 미개시 임대의무",
           "value": "3,557.3억달러",
-          "note": "데이터센터·에너지 인프라·코로케이션·네트워크 관련 계약으로 2026~2036년 개시 예정이다.",
+          "note": "데이터센터·에너지 인프라·코로케이션·네트워크 관련 장기 임대의무다.",
           "observed_at": "2026-09-30",
-          "comparison": "2026년 6월 말 2,789.9억달러보다 증가",
+          "comparison": "잠재 장기 의무이며 현재 장부 임대부채와 구분",
           "source_ids": [
-            "S13",
-            "S14"
+            "S10"
           ],
           "included": true
         },
         {
           "label": "Meta 최대 잔존가치 보증",
           "value": "414.9억달러",
-          "note": "루이지애나·텍사스 데이터센터 벤처의 RVG 최대치다. 지급 가능성이 높지 않다고 판단해 부채는 인식하지 않았다.",
+          "note": "루이지애나·텍사스 데이터센터 벤처의 최대 RVG다. 지급 가능성이 높지 않다고 판단해 부채는 인식하지 않았다.",
           "observed_at": "2026-09-30",
-          "comparison": "2025년 말 280.9억달러보다 증가",
+          "comparison": "2025년 말 280.9억달러에서 증가",
           "source_ids": [
-            "S13"
+            "S10"
           ],
           "included": true
         },
         {
-          "label": "Meta 제한 현금",
+          "label": "Meta 인프라 계약 제한현금",
           "value": "108억달러",
-          "note": "다년 인프라 구매계약의 에스크로 요건으로 일반 기업 용도 사용이 제한되며 2028~2030년 해제 예정이다.",
+          "note": "다년 인프라 구매계약의 에스크로 요건으로 일반 기업 용도 사용이 제한된다.",
           "observed_at": "2026-09-30",
-          "comparison": "계약 노출이 일부 실제 유동성 제한으로 연결",
+          "comparison": "잠재 노출 중 일부가 실제 유동성 제한으로 연결",
           "source_ids": [
-            "S13"
+            "S10"
           ],
           "included": true
         },
         {
-          "label": "보증 실행·실제 손실 이전",
-          "value": "확인 제한",
-          "note": "공시된 최대 노출은 확인했으나 보증 청구나 복수 대주단의 실제 손실 전가는 발견되지 않았다.",
-          "observed_at": null,
-          "comparison": "잠재 연결성과 실제 손실을 분리",
+          "label": "반도체 기업의 Meta 공모 참여 의향",
+          "value": "합계 최대 50억달러",
+          "note": "NVIDIA·AMD·Broadcom의 비구속적 관심표명이다. 실제 매입 약정이나 완료된 투자로 보지 않는다.",
+          "observed_at": "2026-10-26",
+          "comparison": "생태계 내 잠재 자본 연결성이 추가됐으나 손실 이전은 아님",
           "source_ids": [
-            "S12",
-            "S13"
+            "S5"
           ],
-          "included": false
+          "included": true
         }
       ]
     }
@@ -347,87 +381,63 @@
   "sources": [
     {
       "id": "S1",
-      "name": "Reuters — CoreWeave debt stress tests private credit's AI financing boom",
-      "url": "https://www.investing.com/news/stock-market-news/private-credit-roundup-coreweaves-debt-stress-tests-private-credits-ai-financing-boom-4954178",
+      "name": "Reuters — Private credit roundup: CoreWeave's debt stress tests private credit's AI financing boom",
+      "url": "https://www.marketscreener.com/news/private-credit-roundup-coreweave-s-debt-stress-tests-private-credit-s-ai-financing-boom-ce785cdadd8bf320",
       "published_at": "2026-10-16"
     },
     {
       "id": "S2",
-      "name": "Reuters — AI credit default swap spreads widen sharply",
-      "url": "https://uk.marketscreener.com/news/ai-credit-default-swap-spreads-widen-sharply-ce785dd3d980f124",
-      "published_at": "2026-10-15"
+      "name": "BondTerminal — CoreWeave Bonds: 4 USD Issues, 2030–2032",
+      "url": "https://bondterminal.com/issuers/coreweave-inc",
+      "published_at": null
     },
     {
       "id": "S3",
       "name": "U.S. Treasury — Daily Treasury Par Yield Curve Rates",
-      "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&field_tdr_date_value_month=202610&type=daily_treasury_yield_curve",
+      "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve",
       "published_at": null
     },
     {
       "id": "S4",
       "name": "Meta Platforms — Third Quarter 2026 Results",
-      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-09302026xexhibit991.htm",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
       "published_at": "2026-10-21"
     },
     {
       "id": "S5",
-      "name": "Microsoft — Fiscal Year 2026 Fourth Quarter Earnings Call",
-      "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4",
-      "published_at": null
+      "name": "Meta Platforms — Launch of Depositary Share and Common Stock Offerings",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Announces-Launch-of-Offering-of-Depositary-Shares-Representing-Series-A-Mandatory-Convertible-Preferred-Stock-and-Offering-of-Class-A-Common-Stock-in-Connection-with-Forward-Sale-Agreements/default.aspx",
+      "published_at": "2026-10-26"
     },
     {
       "id": "S6",
-      "name": "Alphabet — Second Quarter 2026 Results",
-      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm",
-      "published_at": "2026-07-22"
-    },
-    {
-      "id": "S7",
-      "name": "Amazon — Second Quarter 2026 Results",
-      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000024/amzn-20260630xex991.htm",
-      "published_at": "2026-07-30"
-    },
-    {
-      "id": "S8",
-      "name": "Amazon — Form 10-Q for Quarter Ended June 30, 2026",
-      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
-      "published_at": null
-    },
-    {
-      "id": "S9",
       "name": "CoreWeave — Form 10-Q for Quarter Ended June 30, 2026",
       "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
       "published_at": "2026-08-12"
     },
     {
-      "id": "S10",
-      "name": "Nebius — First Secured Debt Financing",
-      "url": "https://nebius.com/newsroom/nebius-raises-775-million-in-first-secured-debt-financing-to-accelerate-global-buildout",
-      "published_at": "2026-07-17"
+      "id": "S7",
+      "name": "Lambda — $1 Billion Senior Secured Fixed Rate Financing",
+      "url": "https://lambda.ai/blog/lambda-closes-1-billion-senior-secured-fixed-rate-financing",
+      "published_at": "2026-10-01"
     },
     {
-      "id": "S11",
+      "id": "S8",
       "name": "Silicon Data — H100 Rental Price Index",
       "url": "https://www.silicondata.com/products/silicon-index/h100",
       "published_at": null
     },
     {
-      "id": "S12",
+      "id": "S9",
       "name": "NVIDIA — Form 10-Q for Quarter Ended July 26, 2026",
       "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
       "published_at": "2026-08-27"
     },
     {
-      "id": "S13",
+      "id": "S10",
       "name": "Meta Platforms — Form 10-Q for Quarter Ended September 30, 2026",
       "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm",
       "published_at": "2026-10-22"
-    },
-    {
-      "id": "S14",
-      "name": "Meta Platforms — Form 10-Q for Quarter Ended June 30, 2026",
-      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm",
-      "published_at": null
     }
   ],
   "credit_events": {
@@ -435,7 +445,7 @@
     "systemic_confirmed": false,
     "affected_entities": [],
     "source_ids": [],
-    "description": "CoreWeave의 시장 조달비용 급등은 확인됐지만 중대한 실제 만기 미상환이나 지급불능은 확인되지 않았다. 보증 실행 또는 복수 관련 주체로의 실제 손실 전염도 확인되지 않았다."
+    "description": "시장가격상 높은 신용스트레스는 확인됐으나 중요 차주의 실제 만기 미상환·지급불능이나 복수 관련 주체로의 손실 전염은 확인되지 않았다."
   },
   "schema_version": 2,
   "ui_version": "2.0.0",
@@ -445,48 +455,48 @@
   "watch": "",
   "rule_code": "O1",
   "assessment_state": "provisional",
-  "generated_at": "2026-10-26T10:09:24+09:00",
+  "generated_at": "2026-10-27T11:04:14+09:00",
   "research_model": "gpt-5.6",
-  "api_response_id": "resp_031e793374a3d456016adea7d56db087d18926df4e6758f4ef",
+  "api_response_id": "resp_0fea34308fef3028016ae005f8385c87d0b828b102fed0b410",
   "source_verification": "urls_observed_in_tools; claim interpretation remains qualitative",
   "trend": {
-    "same_rules_count": 13,
+    "same_rules_count": 14,
     "days_30": {
       "days": 30,
-      "available_count": 13,
+      "available_count": 14,
       "level_days": {
         "YELLOW": 5,
-        "ORANGE": 8
+        "ORANGE": 9
       },
       "first_date": "2026-09-29",
-      "last_date": "2026-10-26"
+      "last_date": "2026-10-27"
     },
     "days_90": {
       "days": 90,
-      "available_count": 13,
+      "available_count": 14,
       "level_days": {
         "YELLOW": 5,
-        "ORANGE": 8
+        "ORANGE": 9
       },
       "first_date": "2026-09-29",
-      "last_date": "2026-10-26"
+      "last_date": "2026-10-27"
     },
     "days_180": {
       "days": 180,
-      "available_count": 13,
+      "available_count": 14,
       "level_days": {
         "YELLOW": 5,
-        "ORANGE": 8
+        "ORANGE": 9
       },
       "first_date": "2026-09-29",
-      "last_date": "2026-10-26"
+      "last_date": "2026-10-27"
     }
   },
-  "current_level_streak_days": 2,
-  "history_count": 20,
-  "rendered_at": "2026-10-26T10:09:24+09:00",
+  "current_level_streak_days": 3,
+  "history_count": 21,
+  "rendered_at": "2026-10-27T11:04:14+09:00",
   "html_url": "./latest.html",
-  "build_sha": "415a3177a66399dbec38af857d222004bb0f0241",
+  "build_sha": "7f2d825b0a9f65a692e88c09ce597fb47e8140df",
   "monthly_summary": {
     "current_month": "2026-10",
     "available": true,
