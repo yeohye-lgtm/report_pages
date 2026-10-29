@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-28",
+  "date": "2026-10-29",
   "schema_version": 2,
   "ui_version": "2.0.0",
   "rules_version": "1.0",
@@ -8,7 +8,7 @@
   "watch": "",
   "assessment_state": "failed",
   "change": "unavailable",
-  "generated_at": "2026-10-28T11:13:53+09:00",
+  "generated_at": "2026-10-29T11:26:09+09:00",
   "headline": "자료 확인에 실패해 오늘 판정을 보류합니다.",
   "reason": "이전 등급을 오늘의 판단으로 승계하지 않습니다.",
   "summary": "수집 또는 검증 실패. 이전 보고서와 시장 변화를 비교하지 않습니다.",
@@ -88,20 +88,20 @@
   ],
   "contagion": "현재 확인 제한",
   "last_available_report": {
-    "date": "2026-10-27",
-    "risk_level": "ORANGE",
-    "assessment_state": "provisional"
+    "date": "2026-10-28",
+    "risk_level": "UNKNOWN",
+    "assessment_state": "failed"
   },
   "trend": {
     "same_rules_count": 14,
     "days_30": {
       "days": 30,
-      "available_count": 14,
+      "available_count": 13,
       "level_days": {
-        "YELLOW": 5,
-        "ORANGE": 9
+        "ORANGE": 9,
+        "YELLOW": 4
       },
-      "first_date": "2026-09-29",
+      "first_date": "2026-09-30",
       "last_date": "2026-10-27"
     },
     "days_90": {
@@ -127,9 +127,9 @@
   },
   "current_level_streak_days": 0,
   "history_count": 22,
-  "rendered_at": "2026-10-28T11:13:54+09:00",
+  "rendered_at": "2026-10-29T11:26:09+09:00",
   "html_url": "./latest.html",
-  "build_sha": "d4815bace77629a721df09feedfdef9f9e2a0253",
+  "build_sha": "fe4a1d912c39530e78252932c033116a4f4dbb48",
   "monthly_summary": {
     "current_month": "2026-10",
     "available": true,
